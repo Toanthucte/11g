@@ -1,0 +1,43 @@
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.95rem;
+  cursor: pointer;
+}
+
+.accordionHeader h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.accordionToggle {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--text-primary);
+  border-radius: 999px;
+  padding: 0.65rem 0.95rem;
+  cursor: pointer;
+}
+
+.accordionToggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.accordionContent {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 0.85rem;
+}
+
+.diseaseRefs .diseaseItem {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.85rem;
+  padding: 0.9rem 1rem;
+}

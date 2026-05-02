@@ -207,6 +207,23 @@ button {
   padding: 0.95rem 1.4rem;
 }
 
+.actionRowWide {
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.actionRowWide > button {
+  flex: 1;
+  min-width: 180px;
+  max-width: 320px;
+}
+
+@media (max-width: 900px) {
+  .actionRowWide {
+    flex-direction: column;
+  }
+}
+
 .fabButton {
   width: 3.5rem;
   height: 3.5rem;
@@ -490,11 +507,26 @@ button {
 .compareStrip {
   display: grid;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #ff7300;
+  border: 1px solid #fff;
   border-radius: 0.85rem;
   padding: 0.75rem 1rem;
-  color: var(--text-secondary);
+  color: #fff;
+  position: sticky;
+  top: 1rem;
+  z-index: 10;
+  backdrop-filter: blur(16px);
+}
+
+.sectionHeader h3 {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background: #ff7300;
+  border: 1px solid #fff;
+  border-radius: 0.85rem;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
 }
 
 .inputGridMobile {

@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { jsPDF } from "jspdf";
 import benhTrangData from "@/data/benh-trang-tong-hop.json";
 import foodData from "@/data/thuc-pham-kiem-tri-benh.json";
 import "@/styles/App.css";
+import "@/styles/accordion.css";
 import { getAgeGroup, getThresholds } from "@/services/thresholds";
 
 type Page = "intro" | "basic" | "input" | "report";
@@ -102,6 +103,56 @@ const emptyMetrics: MetricValues = {
   ph: "",
 };
 
+const metricFieldOrder: Array<keyof MetricValues> = [
+  "sbpL",
+  "dbpL",
+  "hrL",
+  "sbpR",
+  "dbpR",
+  "hrR",
+  "tempForehead",
+  "tempHand",
+  "tempFoot",
+  "glu",
+  "ph",
+];
+
+const autoAdvanceThresholds: Partial<Record<keyof MetricValues, number>> = {
+  sbpL: 4,
+  dbpL: 4,
+  hrL: 4,
+  sbpR: 4,
+  dbpR: 4,
+  hrR: 4,
+  tempForehead: 4,
+  tempHand: 4,
+  tempFoot: 4,
+  glu: 3,
+  ph: 4,
+};
+
+const autoAdvanceDelays: Partial<Record<keyof MetricValues, number>> = {
+  tempForehead: 2000,
+  tempHand: 2000,
+  tempFoot: 2000,
+  ph: 2000,
+};
+
+const decimalFields: Array<keyof MetricValues> = ["tempForehead", "tempHand", "tempFoot", "ph"];
+
+function isValidDecimalEntry(field: keyof MetricValues, value: string) {
+  if (!decimalFields.includes(field)) return false;
+  if (value.endsWith(".")) return false;
+  const cleaned = value.replace(/[^0-9.]/g, "");
+  if (cleaned !== value) return false;
+  const numericValue = toNumber(value);
+  if (numericValue === null) return false;
+  if (field === "ph") {
+    return /^\d(\.\d+)?$/.test(value);
+  }
+  return /^\d{2}\.\d$/.test(value);
+}
+
 const rememberAgeKey = "kcyd_age";
 
 function toNumber(value: string): number | null {
@@ -119,6 +170,20 @@ function classifyBMI(bmi: number): { text: string; level: HighlightLevel } {
   if (bmi < 35) return { text: "Béo phì độ I", level: "orange" };
   if (bmi < 40) return { text: "Béo phì độ II", level: "orange" };
   return { text: "Béo phì độ III", level: "red" };
+}
+
+function getBMIAdvice(bmi: number, height: number, weight: number) {
+  const normalMin = 18.5 * height * height;
+  const normalMax = 25 * height * height;
+  if (bmi < 18.5) {
+    const diff = normalMin - weight;
+    return `Bạn cần tăng thêm ${diff.toFixed(1)} kg để đạt BMI 18.5 (cân nặng tối thiểu ${normalMin.toFixed(1)} kg).`;
+  }
+  if (bmi < 25) {
+    return `Phạm vi cân nặng bình thường: ${normalMin.toFixed(1)} - ${normalMax.toFixed(1)} kg.`;
+  }
+  const diff = weight - normalMax;
+  return `Bạn cần giảm ${diff.toFixed(1)} kg để đạt BMI 25 (cân nặng tối đa ${normalMax.toFixed(1)} kg).`;
 }
 
 function fieldRangeByStage(stage: StageKey, field: keyof MetricValues): { min: number; max: number } | null {
@@ -172,9 +237,13 @@ export default function App() {
   });
 
   const [workingMetrics, setWorkingMetrics] = useState<MetricValues>(emptyMetrics);
+  const inputRefs = useRef<Partial<Record<keyof MetricValues, HTMLInputElement>>>({});
+  const typingTimers = useRef<Partial<Record<keyof MetricValues, number>>>({});
   const [fabOpen, setFabOpen] = useState(false);
   const [voiceFoodNote, setVoiceFoodNote] = useState("");
   const [voiceListening, setVoiceListening] = useState(false);
+  const [diseaseAccordionOpen, setDiseaseAccordionOpen] = useState(false);
+  const [foodAccordionOpen, setFoodAccordionOpen] = useState(false);
 
   useEffect(() => {
     const savedAge = localStorage.getItem(rememberAgeKey);
@@ -213,7 +282,11 @@ export default function App() {
       return null;
     }
     const bmi = w / (h * h);
-    return { bmi, ...classifyBMI(bmi) };
+    return {
+      bmi,
+      ...classifyBMI(bmi),
+      detail: getBMIAdvice(bmi, h, w),
+    };
   }, [weight, height]);
 
   const ageGroup = useMemo(() => {
@@ -431,8 +504,55 @@ export default function App() {
     setPage("input");
   }
 
+  function clearMetricTimer(field: keyof MetricValues) {
+    const timerId = typingTimers.current[field];
+    if (timerId) {
+      window.clearTimeout(timerId);
+      delete typingTimers.current[field];
+    }
+  }
+
+  function focusNextMetricField(field: keyof MetricValues) {
+    const currentIndex = metricFieldOrder.indexOf(field);
+    if (currentIndex === -1) return;
+    const nextField = metricFieldOrder[currentIndex + 1];
+    if (!nextField) return;
+    inputRefs.current[nextField]?.focus();
+  }
+
+  function shouldAutoAdvance(field: keyof MetricValues, value: string) {
+    const numericValue = toNumber(value);
+    if (numericValue === null) return false;
+    if (isValidDecimalEntry(field, value)) {
+      return true;
+    }
+    const maxLength = autoAdvanceThresholds[field] ?? 3;
+    const cleaned = value.replace(/[^0-9.]/g, "");
+    return cleaned.length >= maxLength;
+  }
+
+  function scheduleAutoAdvance(field: keyof MetricValues, value: string) {
+    clearMetricTimer(field);
+    const cleaned = value.replace(/[^0-9.]/g, "");
+    if (shouldAutoAdvance(field, value)) {
+      focusNextMetricField(field);
+      return;
+    }
+
+    if (!cleaned) return;
+    if (cleaned.length < 2) return;
+
+    const delay = autoAdvanceDelays[field] ?? 1000;
+    typingTimers.current[field] = window.setTimeout(() => {
+      if (inputRefs.current[field]?.value === value && value.trim()) {
+        focusNextMetricField(field);
+      }
+    }, delay);
+  }
+
   function updateMetric(field: keyof MetricValues, value: string) {
     setWorkingMetrics({ ...workingMetrics, [field]: value });
+    scheduleAutoAdvance(field, value);
   }
 
   function stageComparisonText() {
@@ -634,9 +754,27 @@ export default function App() {
     downloadFile(lines.join("\n"), "kcyd-report.txt", "text/plain;charset=utf-8");
   }
 
-  function exportPdf() {
+  async function exportPdf() {
     const payload = buildExportPayload();
     const doc = new jsPDF();
+
+    try {
+      const fontUrl = new URL("./fonts/NotoSans-Regular.ttf", import.meta.url);
+      const response = await fetch(fontUrl.href);
+      const arrayBuffer = await response.arrayBuffer();
+      const bytes = new Uint8Array(arrayBuffer);
+      let binary = "";
+      const chunkSize = 0x8000;
+      for (let i = 0; i < bytes.length; i += chunkSize) {
+        binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
+      }
+      const fontBase64 = window.btoa(binary);
+      doc.addFileToVFS("NotoSans-Regular.ttf", fontBase64);
+      doc.addFont("NotoSans-Regular.ttf", "NotoSans", "normal");
+      doc.setFont("NotoSans");
+    } catch (error) {
+      console.warn("Không thể tải font PDF, sử dụng font mặc định:", error);
+    }
 
     const textLines: string[] = [];
     textLines.push("BAO CAO 11 SO VANG");
@@ -816,16 +954,21 @@ export default function App() {
               />
             </div>
             {bmiInfo ? (
-              <p className={`bmiHint ${fieldClass(bmiInfo.level)}`}>
-                BMI: {bmiInfo.bmi.toFixed(1)} - {bmiInfo.text}
-              </p>
+              <>
+                <p className={`bmiHint ${fieldClass(bmiInfo.level)}`}>
+                  BMI: {bmiInfo.bmi.toFixed(1)} - {bmiInfo.text}
+                </p>
+                <p className={`bmiHint ${fieldClass(bmiInfo.level)}`}>
+                  {bmiInfo.detail}
+                </p>
+              </>
             ) : (
               <p className="description">Không nhập cũng có thể bỏ qua.</p>
             )}
           </div>
         </div>
 
-        <div className="actionRow">
+        <div className="actionRow actionRowWide">
           <button className="primaryButton" type="button" onClick={handleContinueBasic}>
             Tiếp tục nhập liệu
           </button>
@@ -858,11 +1001,24 @@ export default function App() {
           {unit ? ` (${unit})` : ""}
         </span>
         <input
+          ref={(element) => {
+            if (element) {
+              inputRefs.current[field] = element;
+            }
+          }}
           type="number"
+          inputMode={field.startsWith("temp") || field === "ph" ? "decimal" : "numeric"}
           step={field.startsWith("temp") || field === "ph" ? "0.1" : "1"}
           className={`fieldInput ${fieldClass(level)}`}
           value={workingMetrics[field]}
           onChange={(event) => updateMetric(field, event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              focusNextMetricField(field);
+            }
+          }}
+          autoFocus={field === "sbpL"}
         />
       </label>
     );
@@ -887,8 +1043,7 @@ export default function App() {
       <section className="manualFormCard">
         <div className="sectionHeader">
           <p className="kicker">Nhập 11 số vàng</p>
-          <h1>{stageMeta[activeStage].short}</h1>
-          <p className="description">Bố cục ưu tiên so sánh 2 tay và trước/sau, tối ưu cho điện thoại.</p>
+          <h3>{stageMeta[activeStage].short}</h3>
         </div>
 
         <div className="compareStrip">
@@ -1035,14 +1190,23 @@ export default function App() {
 
           {matchedDiseases.length ? (
             <div className="diseaseRefs">
-              <h4>Tham chiếu từ dữ liệu bệnh trạng</h4>
-              {matchedDiseases.map((record) => (
-                <div key={record.ma_benh} className="diseaseItem">
-                  <strong>{record.ma_benh} - {record.ten_benh}</strong>
-                  <p>{record.trieu_chung}</p>
-                  <p><em>Lưu ý:</em> {record.luu_y}</p>
+              <div className="accordionHeader" onClick={() => setDiseaseAccordionOpen((open) => !open)}>
+                <h4>Tham chiếu từ dữ liệu bệnh trạng</h4>
+                <button type="button" className="accordionToggle">
+                  {diseaseAccordionOpen ? "Thu gọn" : "Mở rộng"}
+                </button>
+              </div>
+              {diseaseAccordionOpen ? (
+                <div className="accordionContent">
+                  {matchedDiseases.map((record) => (
+                    <div key={record.ma_benh} className="diseaseItem">
+                      <strong>{record.ma_benh} - {record.ten_benh}</strong>
+                      <p>{record.trieu_chung}</p>
+                      <p><em>Lưu ý:</em> {record.luu_y}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              ) : null}
             </div>
           ) : null}
         </div>
@@ -1064,20 +1228,27 @@ export default function App() {
         </div>
 
         <div className="reportBlock">
-          <h3>Khối 5 - Hướng điều chỉnh cơ thể</h3>
-          {suggestedFoods.length ? (
-            <div className="foodList">
-              {suggestedFoods.map((food) => (
-                <div key={food.ma_tp} className="foodItem">
-                  <strong>{food.ten_thuc_pham}</strong>
-                  <p>{food.chua_benh}</p>
-                  <small>Không dùng cho: {food.khong_dung_cho}</small>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p>Chưa có gợi ý thực phẩm do chưa đủ dữ liệu nhận diện.</p>
-          )}
+          <div className="accordionHeader" onClick={() => setFoodAccordionOpen((open) => !open)}>
+            <h3>Khối 5 - Hướng điều chỉnh cơ thể</h3>
+            <button type="button" className="accordionToggle">
+              {foodAccordionOpen ? "Thu gọn" : "Mở rộng"}
+            </button>
+          </div>
+          {foodAccordionOpen ? (
+            suggestedFoods.length ? (
+              <div className="foodList">
+                {suggestedFoods.map((food) => (
+                  <div key={food.ma_tp} className="foodItem">
+                    <strong>{food.ten_thuc_pham}</strong>
+                    <p>{food.chua_benh}</p>
+                    <small>Không dùng cho: {food.khong_dung_cho}</small>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p>Chưa có gợi ý thực phẩm do chưa đủ dữ liệu nhận diện.</p>
+            )
+          ) : null}
         </div>
 
         <div className="actionRow">
