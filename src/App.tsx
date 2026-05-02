@@ -555,6 +555,14 @@ export default function App() {
     scheduleAutoAdvance(field, value);
   }
 
+  useEffect(() => {
+    if (page !== "input") return;
+    const timer = window.setTimeout(() => {
+      inputRefs.current.sbpL?.focus();
+    });
+    return () => window.clearTimeout(timer);
+  }, [page, activeStage]);
+
   function stageComparisonText() {
     const compareStage =
       activeStage === "afterMeal"
@@ -807,12 +815,35 @@ export default function App() {
 
   async function shareReport() {
     const payload = buildExportPayload();
-    const shareText = [
-      `Bao cao KCYD - ${new Date(payload.generatedAt).toLocaleString()}`,
-      `Tuoi: ${payload.basicInfo.age}, Gioi tinh: ${payload.basicInfo.gender || "N/A"}`,
-      `Nhom tuoi: ${payload.thresholds.ageGroup}`,
-      `Huong nhan dien: ${payload.diagnosis.map((item) => item.title).join("; ") || "Chua du du lieu"}`,
-    ].join("\n");
+    const lines: string[] = [];
+    lines.push(`Bao cao KCYD - ${new Date(payload.generatedAt).toLocaleString()}`);
+    lines.push(`Tuoi: ${payload.basicInfo.age}`);
+    lines.push(`Gioi tinh: ${payload.basicInfo.gender || "N/A"}`);
+    lines.push(`Nhom tuoi: ${payload.thresholds.ageGroup}`);
+    lines.push(`Chi so AH tieu chuan: SYS ${payload.thresholds.sbp}, DIA ${payload.thresholds.dbp}, HR ${payload.thresholds.hr}`);
+    lines.push("");
+
+    stageSequence.forEach((stage) => {
+      const m = payload.measurements[stage];
+      if (!m) return;
+      lines.push(`[${stageMeta[stage].short}]`);
+      lines.push(`AH-TT: ${m.sbpL}/${m.dbpL}/${m.hrL}`);
+      lines.push(`AH-TP: ${m.sbpR}/${m.dbpR}/${m.hrR}`);
+      lines.push(`TEMP: ${m.tempForehead} | ${m.tempHand} | ${m.tempFoot}`);
+      lines.push(`GLU: ${m.glu} | pH: ${m.ph}`);
+      lines.push("");
+    });
+
+    lines.push("Huong dan nhan dien:");
+    if (payload.diagnosis.length) {
+      payload.diagnosis.forEach((item, index) => {
+        lines.push(`${index + 1}. ${item.title} - ${item.reason}`);
+      });
+    } else {
+      lines.push("Chua co du lieu de nhan dien.");
+    }
+
+    const shareText = lines.join("\n");
 
     if (navigator.share) {
       try {
@@ -937,6 +968,7 @@ export default function App() {
               <input
                 className="fieldInput"
                 type="number"
+                inputMode="decimal"
                 min="0"
                 step="0.1"
                 placeholder="Cân nặng (kg)"
@@ -946,6 +978,7 @@ export default function App() {
               <input
                 className="fieldInput"
                 type="number"
+                inputMode="decimal"
                 min="0"
                 step="0.01"
                 placeholder="Chiều cao (m)"
