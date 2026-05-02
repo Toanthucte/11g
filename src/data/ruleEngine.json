@@ -1,0 +1,189 @@
+{
+  "ageGroups": [
+    {
+      "name": "Thiếu nhi",
+      "range": [5, 12],
+      "thresholds": {
+        "SBP": { "min": 95, "max": 100 },
+        "DBP": { "min": 60, "max": 65 },
+        "HR": { "min": 60, "max": 120 }
+      }
+    },
+    {
+      "name": "Thiếu niên",
+      "range": [13, 17],
+      "thresholds": {
+        "SBP": { "min": 100, "max": 110 },
+        "DBP": { "min": 60, "max": 65 },
+        "HR": { "min": 60, "max": 70 }
+      }
+    },
+    {
+      "name": "Thanh niên",
+      "range": [18, 40],
+      "thresholds": {
+        "SBP": { "min": 110, "max": 120 },
+        "DBP": { "min": 65, "max": 70 },
+        "HR": { "min": 65, "max": 70 }
+      }
+    },
+    {
+      "name": "Trung niên",
+      "range": [41, 59],
+      "thresholds": {
+        "SBP": { "min": 120, "max": 130 },
+        "DBP": { "min": 70, "max": 80 },
+        "HR": { "min": 70, "max": 75 }
+      }
+    },
+    {
+      "name": "Lão niên",
+      "range": [60, 200],
+      "thresholds": {
+        "SBP": { "min": 130, "max": 140 },
+        "DBP": { "min": 80, "max": 90 },
+        "HR": { "min": 70, "max": 80 }
+      }
+    }
+  ],
+  "steps": {
+    "step2": {
+      "required": [
+        "SBP_L_PRE",
+        "DBP_L_PRE",
+        "HR_L_PRE",
+        "SBP_R_PRE",
+        "DBP_R_PRE",
+        "HR_R_PRE",
+        "GLU_PRE",
+        "TEMP_F_PRE",
+        "TEMP_H_PRE",
+        "TEMP_T_PRE",
+        "pH_PRE",
+        "SBP_L_POST",
+        "DBP_L_POST",
+        "HR_L_POST",
+        "SBP_R_POST",
+        "DBP_R_POST",
+        "HR_R_POST",
+        "GLU_POST",
+        "TEMP_F_POST",
+        "TEMP_H_POST",
+        "TEMP_T_POST",
+        "pH_POST"
+      ],
+      "rules": {
+        "SBP_L_POST": {
+          "higher": { "state": "Khí thực", "level": "vàng" },
+          "equal": { "state": "Khí đủ", "level": "xanh" },
+          "lower": { "state": "Khí hư", "level": "đỏ" }
+        },
+        "SBP_R_POST": {
+          "higher": { "state": "SBP phải cao", "level": "vàng" },
+          "equal": { "state": "SBP phải trong ngưỡng", "level": "xanh" },
+          "lower": { "state": "SBP phải thấp", "level": "vàng" }
+        },
+        "DBP_L_POST": {
+          "deltaPositive": { "state": "DBP trái tăng", "level": "xanh" },
+          "deltaZero": { "state": "DBP trái không đổi", "level": "vàng" },
+          "deltaNegative": { "state": "DBP trái giảm", "level": "đỏ" },
+          "below60": { "state": "DBP trái thấp", "level": "đỏ" }
+        },
+        "DBP_R_POST": {
+          "deltaPositive": { "state": "DBP phải tăng", "level": "xanh" },
+          "deltaZero": { "state": "DBP phải không đổi", "level": "vàng" },
+          "deltaNegative": { "state": "DBP phải giảm", "level": "đỏ" },
+          "below60": { "state": "DBP phải thấp", "level": "đỏ" }
+        },
+        "HR_L_POST": {
+          "below": { "state": "HR trái thấp", "level": "vàng" },
+          "within": { "state": "HR trái bình thường", "level": "xanh" },
+          "above": { "state": "HR trái cao", "level": "vàng" }
+        },
+        "HR_R_POST": {
+          "below": { "state": "HR phải thấp", "level": "vàng" },
+          "within": { "state": "HR phải bình thường", "level": "xanh" },
+          "above": { "state": "HR phải cao", "level": "vàng" }
+        },
+        "GLU_POST": {
+          "below140": { "state": "Thiếu đường", "level": "vàng" },
+          "between140and199": { "state": "Đủ đường", "level": "xanh" },
+          "above200": { "state": "Cao", "level": "đỏ" }
+        },
+        "pH_POST": {
+          "below6": { "state": "Toan nặng", "level": "đỏ" },
+          "between6and65": { "state": "Toan nhẹ", "level": "vàng" },
+          "above65": { "state": "Môi trường tốt", "level": "xanh" }
+        },
+        "SBP_GAP_POST": {
+          "above15": { "state": "Chênh SBP hai tay >15", "level": "đỏ" },
+          "below15": { "state": "Chênh SBP trong giới hạn", "level": "xanh" }
+        },
+        "DBP_GAP_POST": {
+          "above15": { "state": "Chênh DBP hai tay >15", "level": "đỏ" },
+          "below15": { "state": "Chênh DBP trong giới hạn", "level": "xanh" }
+        },
+        "TEMP_POST": {
+          "allNormal": { "state": "TEMP sau ăn bình thường", "level": "xanh" },
+          "anyLow": { "state": "TEMP sau ăn thấp", "level": "vàng" },
+          "decrease": { "state": "TEMP không tăng", "level": "vàng" }
+        }
+      }
+    },
+    "step3": {
+      "required": [
+        "SBP_L_SLEEP",
+        "DBP_L_SLEEP",
+        "HR_L_SLEEP",
+        "SBP_R_SLEEP",
+        "DBP_R_SLEEP",
+        "HR_R_SLEEP",
+        "GLU_SLEEP",
+        "TEMP_F_SLEEP",
+        "TEMP_H_SLEEP",
+        "TEMP_T_SLEEP",
+        "pH_SLEEP",
+        "SBP_L_MORNING",
+        "DBP_L_MORNING",
+        "HR_L_MORNING",
+        "SBP_R_MORNING",
+        "DBP_R_MORNING",
+        "HR_R_MORNING",
+        "GLU_MORNING",
+        "TEMP_F_MORNING",
+        "TEMP_H_MORNING",
+        "TEMP_T_MORNING",
+        "pH_MORNING"
+      ],
+      "rules": {
+        "GLU_SLEEP": {
+          "below140": { "state": "Nguy cơ đột tử đêm", "level": "đỏ" },
+          "between140and200": { "state": "Bình thường theo KCYD", "level": "vàng" },
+          "above200": { "state": "An toàn khi ngủ", "level": "xanh" }
+        },
+        "pH_SLEEP": {
+          "below6": { "state": "Toan mạnh", "level": "đỏ" },
+          "between6and65": { "state": "Toan nhẹ", "level": "vàng" },
+          "above65": { "state": "Bình thường", "level": "xanh" }
+        },
+        "SBP_GAP_SLEEP": {
+          "above15": { "state": "Chênh SBP ngủ >15", "level": "đỏ" },
+          "below15": { "state": "Chênh SBP ngủ bình thường", "level": "xanh" }
+        },
+        "DBP_GAP_SLEEP": {
+          "above15": { "state": "Chênh DBP ngủ >15", "level": "đỏ" },
+          "below15": { "state": "Chênh DBP ngủ bình thường", "level": "xanh" }
+        },
+        "GLU_MORNING": {
+          "below80": { "state": "Thiếu đường nghiêm trọng", "level": "đỏ" },
+          "belowSleepMinus60": { "state": "Tiêu hao nhiều", "level": "vàng" },
+          "ok": { "state": "Đủ đường", "level": "xanh" }
+        },
+        "TEMP_MORNING": {
+          "allNormal": { "state": "TEMP sáng bình thường", "level": "xanh" },
+          "anyLow": { "state": "TEMP sáng thấp", "level": "vàng" }
+        }
+      }
+    }
+  }
+}

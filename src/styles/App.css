@@ -1,0 +1,628 @@
+:root {
+  --navy-deepest: #000b18;
+  --navy-deep: #001020;
+  --navy-mid: #001f3f;
+  --navy-surface: #062040;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-bg-hover: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-blur: blur(16px);
+  --accent: #3aa0ff;
+  --accent-soft: rgba(58, 160, 255, 0.2);
+  --accent-glow: rgba(58, 160, 255, 0.45);
+  --text-primary: #f6fbff;
+  --text-secondary: rgba(214, 232, 255, 0.78);
+  --text-muted: rgba(180, 210, 255, 0.55);
+  --text-label: rgba(200, 224, 255, 0.72);
+  --border-soft: rgba(255, 255, 255, 0.12);
+  --font-heading: "Montserrat", "Sora", sans-serif;
+  --font-body: "Sora", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-data: "Inter", "Roboto", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+  background: radial-gradient(circle at top left, rgba(58, 160, 255, 0.18), transparent 25%),
+    linear-gradient(160deg, var(--navy-mid) 0%, var(--navy-deep) 52%, var(--navy-deepest) 100%);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.appShell {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem 3rem;
+}
+
+.dataInputShell {
+  width: min(100%, 1200px);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.pageCard,
+.manualFormCard,
+.summaryCard,
+.reportCard {
+  width: min(100%, 1120px);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.5rem;
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.17);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.headerBlock,
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+section h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.6vw, 2.6rem);
+  line-height: 1.05;
+}
+
+.description {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.formGrid,
+.methodGrid,
+.fieldGroup,
+.previewGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.formGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fieldRow,
+.matrixRow,
+.voicePanel,
+.deviceButtons,
+.actionRow,
+.footerRow,
+.summaryRow,
+.previewRow {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.fieldRow {
+  flex-direction: column;
+}
+
+.fieldLabel {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.fieldInput,
+.matrixInput,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  border-radius: 1rem;
+  padding: 0.95rem 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.fieldInput:focus,
+.matrixInput:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.primaryButton,
+.ghostButton,
+.fabButton,
+.fabMenuItem,
+.tabButton,
+.tabActive {
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease,
+    border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryButton {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 0.95rem 1.6rem;
+  font-weight: 700;
+  box-shadow: 0 18px 40px rgba(58, 160, 255, 0.18);
+}
+
+.primaryButton:hover {
+  transform: translateY(-1px);
+}
+
+.ghostButton {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-soft);
+  padding: 0.95rem 1.4rem;
+}
+
+.fabButton {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.fabButton.listening {
+  background: #ff6a6a;
+}
+
+.methodCard {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.15rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1.3rem;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.methodCardActive {
+  border-color: var(--accent);
+  background: rgba(58, 160, 255, 0.16);
+}
+
+.methodGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.methodIcon {
+  width: 3.25rem;
+  height: 3.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.matrixTable {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.matrixRow {
+  grid-template-columns: 1.5fr 1fr 1fr;
+  align-items: center;
+}
+
+.matrixRow.header {
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.previewCard,
+.reportCard,
+.summaryCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1.25rem;
+  padding: 1.2rem 1.25rem;
+}
+
+.previewGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.previewRow {
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.previewRow:last-child {
+  border-bottom: none;
+}
+
+.previewLabel {
+  color: var(--text-secondary);
+}
+
+.previewValue {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.stageSwitch {
+  display: inline-flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.flowToggle {
+  display: inline-flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.tabButton,
+.tabActive {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.9rem 1.2rem;
+  color: var(--text-primary);
+}
+
+.tabActive {
+  border-color: var(--accent);
+  background: rgba(58, 160, 255, 0.18);
+}
+
+.voicePanel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.voiceMessage {
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.transcriptBlock {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.actionRow,
+.footerRow {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.statusGood {
+  color: #91f0b8;
+}
+
+.statusWarn {
+  color: #ffd66f;
+}
+
+.statusAlert {
+  color: #ff8989;
+}
+
+.introCard {
+  align-items: center;
+  text-align: center;
+}
+
+.introCount {
+  font-size: clamp(2.2rem, 8vw, 4rem);
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.basicBlock {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.basicBlock h2,
+.metricCard h3,
+.reportBlock h3,
+.diseaseRefs h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.basicGridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.pillInputRow {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.avatarBadge {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(58, 160, 255, 0.2);
+  border: 1px solid rgba(58, 160, 255, 0.5);
+  font-weight: 800;
+}
+
+.pillFields {
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.pillInput {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  outline: none;
+}
+
+.rememberLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.inlineButtonGroup {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bmiRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.bmiHint {
+  margin: 0;
+  font-weight: 700;
+}
+
+.fabWrap {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+  display: grid;
+  justify-items: end;
+  gap: 0.5rem;
+}
+
+.fabMain {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(58, 160, 255, 0.6);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+}
+
+.fabMenuNew {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.fabMenuItemNew {
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 20, 45, 0.92);
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.compareStrip {
+  display: grid;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.85rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-secondary);
+}
+
+.inputGridMobile {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.metricCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.metricRows {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metricField {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+}
+
+.singleLineCard {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.navOptionsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.metricGreen {
+  border-color: rgba(145, 240, 184, 0.75);
+}
+
+.metricYellow {
+  border-color: rgba(255, 214, 111, 0.9);
+}
+
+.metricOrange {
+  border-color: rgba(255, 161, 75, 0.95);
+}
+
+.metricRed {
+  border-color: rgba(255, 118, 118, 0.95);
+}
+
+.reportStack,
+.diagnosisList,
+.foodList,
+.diseaseRefs {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.reportBlock {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.reportGrid {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--text-secondary);
+}
+
+.diagnosisItem,
+.foodItem,
+.diseaseItem {
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  display: grid;
+  gap: 0.3rem;
+}
+
+.diagnosisItem p,
+.foodItem p,
+.diseaseItem p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.diagnosisItem small,
+.foodItem small {
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .formGrid,
+  .methodGrid,
+  .previewGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .basicGridTwo,
+  .bmiRow,
+  .singleLineCard,
+  .metricRows,
+  .navOptionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .pageCard,
+  .manualFormCard,
+  .summaryCard,
+  .reportCard {
+    padding: 1.25rem;
+  }
+
+  .actionRow,
+  .fieldRow,
+  .voicePanel {
+    gap: 0.75rem;
+  }
+}

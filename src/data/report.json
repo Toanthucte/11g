@@ -1,0 +1,25 @@
+import { writeFile } from "fs/promises";
+// ... các import khác
+
+// ... phần code hiện tại
+
+if (!validateStep2(step2Data)) {
+  console.error("Dữ liệu Bước 2 không hợp lệ. Vui lòng kiểm tra lại các giá trị nhập.");
+} else {
+  const summary2 = buildSummaryPrePost(step2Data, thresholds);
+  printSummary("Summary Bước 2", summary2);
+
+  if (!validateStep3({ ...sleepData, ...morningData })) {
+    console.error("Dữ liệu Bước 3 không hợp lệ. Vui lòng kiểm tra lại các giá trị nhập.");
+  } else {
+    const summary3 = buildSummarySleepMorning(sleepData, morningData, thresholds);
+    printSummary("Summary Bước 3", summary3);
+
+    const report = buildReport(summary2, summary3, age);
+    console.log("\n=== JSON Report ===");
+    console.log(JSON.stringify(report, null, 2));
+
+    await writeFile("report.json", JSON.stringify(report, null, 2), "utf-8");
+    console.log("Đã lưu report vào report.json");
+  }
+}

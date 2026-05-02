@@ -1,0 +1,692 @@
+﻿[
+  {
+    "ma_benh": "PT1-01",
+    "nhom_benh": "Tim mạch",
+    "ten_benh": "Nhịp tim ban ngày cao, ban đêm thấp",
+    "trieu_chung": "Ban ngày nhịp tim 75-85 bpm; Ban đêm nhịp tim xuống thấp 50-60 bpm; người lạnh về đêm",
+    "chi_so": "Đường huyết ban ngày 180-200mg/dl; ban đêm <100mg/dl; nhịp tim đêm 50-60",
+    "nguyen_nhan": "Thiếu đường ban đêm; máu đặc; tốc độ bơm máu chậm; cơ thể lạnh",
+    "phan_biet": "Nguy cơ đột tử ban đêm nếu đường huyết xuống dưới 100mg/dl; tim hết năng lượng ngừng đập",
+    "luu_y": "Trước khi ngủ uống thêm đường cát vàng cho đường huyết lên 200mg/dl; sáng ngủ dậy đường còn 140mg/dl là khỏe"
+  },
+  {
+    "ma_benh": "PT1-02",
+    "nhom_benh": "Thần kinh",
+    "ten_benh": "Giật cơ mặt trái (má giật liên hồi)",
+    "trieu_chung": "Má trái giật liên hồi; càng lạnh càng giật; nếu không chữa sẽ thành liệt mặt méo miệng",
+    "chi_so": "Đường huyết <100mg/dl",
+    "nguyen_nhan": "Thần kinh cơ mặt bị lạnh do thiếu đường; không đủ năng lượng nuôi thần kinh cơ",
+    "phan_biet": "Tây y: rối loạn thần kinh cơ (hiện tượng máy cơ); Đông y: phong hàn; YHBS: thiếu đường nhiệt lượng",
+    "luu_y": "Uống đường cho lên 200mg/dl; xoa nóng má để kích thích máu đến; duy trì đường huyết đủ để tránh liệt mặt"
+  },
+  {
+    "ma_benh": "PT1-03",
+    "nhom_benh": "Gan - Thận - Lách",
+    "ten_benh": "Xơ gan cổ trướng hôn mê",
+    "trieu_chung": "Phù chân (phù khí không phải phù nước); hôn mê; cổ trướng; áp huyết bất thường 2 tay",
+    "chi_so": "Áp huyết tay trái 129/71/80; tay phải 147/82/81; chân trái 153/83/81; chân phải 171/79/80; đường huyết 100mg/dl",
+    "nguyen_nhan": "Thiếu đường; kiêng đường; lạm dụng thuốc/rượu làm gan phải rút đường tạo kháng thể; thiếu oxy trong máu",
+    "phan_biet": "Phù khí (không phải phù nước); áp huyết chân cao bất thường; khác suy thận gây phù nước",
+    "luu_y": "Cấp cứu: tiêm glucoza (không tiêm insulin); chườm nóng vùng gan; uống đường cho đủ 200mg/dl; tập bài Lăn Người và Thụt Dầu"
+  },
+  {
+    "ma_benh": "PT1-04",
+    "nhom_benh": "Huyết học",
+    "ten_benh": "Tăng tiểu cầu",
+    "trieu_chung": "Đau đầu chóng mặt hoa mắt; ngực đau; ngất xỉu; bầm tím trên da; tê bì tay chân; chảy máu mũi miệng; lách to",
+    "chi_so": "Áp huyết tay phải 112/64/81; tay trái 116/63/85; chân 126-134/63-65/85; đường huyết 8.9-9.2 mmol/l (không đủ 11 mmol/l)",
+    "nguyen_nhan": "Thiếu đường; thiếu máu; gan nhiễm độc do thuốc tây; thức ăn không chuyển hóa thành máu",
+    "phan_biet": "Chóng mặt do thiếu đường (đứng lên ngồi xuống); chóng mặt do thiếu máu (nằm ngồi dậy nhanh); xuất huyết do vỡ tiểu cầu",
+    "luu_y": "Ăn bổ máu (phở chay, bún chay 3 tô/ngày); uống đường cát vàng; uống nước mía 2 lít/ngày (người nóng); tập bài Lăn Người; theo dõi áp huyết"
+  },
+  {
+    "ma_benh": "PT1-05",
+    "nhom_benh": "Ung thư",
+    "ten_benh": "Ung thư tuyến giáp sau cắt (đang uống phóng xạ)",
+    "trieu_chung": "Sức khỏe yếu; dạ dày trào ngược; phù toàn thân; khô cổ khát; run tay chân; sụt cân; nước tiểu nóng",
+    "chi_so": "Áp huyết TT 132/85-80; TP 133-139/85-94/80-101; đường huyết 6.8-11.2 mmol/l; pH 6; nhiệt độ 36.1-37.4°C; cân nặng 48.5kg (thiếu ~14.5kg)",
+    "nguyen_nhan": "Tiêu hóa nghịch (thức ăn trào ngược không xuống ruột); thiếu đường chuyển hóa thức ăn thành máu; hormone nhân tạo gây hại gan",
+    "phan_biet": "Phù do thiếu máu (không phải phù thận/tim); sụt cân do không tạo được máu; khô cổ do thận nhiệt",
+    "luu_y": "Theo dõi áp huyết 2 tay trước và sau ăn; đo đường huyết và nhiệt độ; bổ sung nước mía; không ăn gạo lứt/yến mạch làm hại; kiểm tra từng loại thức ăn bằng máy đo"
+  },
+  {
+    "ma_benh": "PT1-06",
+    "nhom_benh": "Ung thư",
+    "ten_benh": "Ung thư - điều trị bằng Baking Soda",
+    "trieu_chung": "Khối u acid pH 5-6.9; môi trường acid tế bào ung thư phát triển; ung thư vú, ung thư dạ dày, ung thư tuyến giáp",
+    "chi_so": "pH khối u ung thư 5-6.9; pH kiềm 8-9 ức chế tế bào ung thư",
+    "nguyen_nhan": "Môi trường acid tạo điều kiện cho tế bào ung thư phát triển; thiếu đường dương; pH máu acid",
+    "phan_biet": "Ung thư phát triển trong môi trường acid pH<7; baking soda tăng pH kiềm ức chế và tiêu diệt tế bào ung thư",
+    "luu_y": "Uống 1 thìa baking soda + 1 thìa mật mía/ngày (Tiến sĩ Simonchini); uống 2 thìa cà phê baking soda trong 2 cốc nước chia 3 lần/ngày (Protocol Whitaker); chiều uống thêm 1 thìa baking soda pha cục đường đen"
+  },
+  {
+    "ma_benh": "PT1-07",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Tiểu đường - bỏ thuốc uống đường khỏe",
+    "trieu_chung": "Mệt mỏi; sụt cân; yếu sức khi dùng thuốc hạ đường; ngược lại khỏe khi bỏ thuốc và uống đường",
+    "chi_so": "Tiêu chuẩn YHBS: đường huyết sau ăn 200mg/dl (11mmol/l); khi đói 140mg/dl (8mmol/l); calo căn bản 1520/ngày",
+    "nguyen_nhan": "Tây y hạ thấp tiêu chuẩn đường huyết sai; thuốc insulin rút mất đường trong cơ bắp gây sụt cân; kiêng đường làm cơ thể thiếu năng lượng",
+    "phan_biet": "Tiêu chuẩn WHO 1979: đói 140mg/dl, no 200mg/dl; tiêu chuẩn mới của tây y 3.9-6.3mmol/l sai; bệnh 3 nhiều thật sự mới là tiểu đường đích thực",
+    "luu_y": "Bỏ thuốc hạ đường; uống thêm đường cát vàng sau ăn; theo dõi nhịp tim 70-80 và nhiệt độ 36-36.5°C là tiêu chuẩn khỏe"
+  },
+  {
+    "ma_benh": "PT1-08",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Tiêu chuẩn đường huyết cho người ăn 1 bữa/ngày",
+    "trieu_chung": "Đường huyết sau ăn cao (có thể 27 mmol/l) nhưng không phải bệnh tiểu đường vì ăn 1 bữa/ngày",
+    "chi_so": "Đường huyết sau ăn 490mg/dl (27mmol/l); tiêu chuẩn tính theo số bữa ăn",
+    "nguyen_nhan": "Tiêu chuẩn đường huyết phải tính theo số bữa ăn trong ngày, không thể áp dụng đồng nhất",
+    "phan_biet": "Người ăn 1 bữa/ngày: sau ăn 490mg/dl không phải tiểu đường; người ăn 3 bữa: sau ăn 200mg/dl là bình thường",
+    "luu_y": "Đường cao sau ăn phải so sánh với nhịp tim và nhiệt độ; nếu nhịp tim và nhiệt độ bình thường thì không phải tiểu đường dù đường cao"
+  },
+  {
+    "ma_benh": "PT1-09",
+    "nhom_benh": "Thai kỳ",
+    "ten_benh": "Tiểu đường thai kỳ (chẩn đoán sai, phản khoa học)",
+    "trieu_chung": "Mẹ bầu bị chẩn đoán tiểu đường thai kỳ; được tiêm insulin; con sinh ra ốm yếu thiếu cân; chậm phát triển",
+    "chi_so": "Tiêu chuẩn sau ăn khi mang thai: 242mg/dl; cân nặng mẹ nên tăng thêm 3-4kg khi mang bầu",
+    "nguyen_nhan": "Tây y VN chẩn đoán và điều trị sai; insulin giết thai nhi; kiêng đường làm thiếu dinh dưỡng cho thai nhi",
+    "phan_biet": "Tiểu đường thai kỳ thật: mẹ lên cân nhanh, béo phì, con nặng >4kg; tiểu đường thai kỳ giả: mẹ chỉ ăn cơm bình thường đường cao",
+    "luu_y": "Mang thai cần ăn cơm nhiều hơn; cao 1.55m cân nặng khi sanh 59-60kg; không dùng insulin thai kỳ; tập Vỗ Tay 4 nhịp và Nằm Đá Gót Chân vào Mông"
+  },
+  {
+    "ma_benh": "PT1-10",
+    "nhom_benh": "Tim mạch",
+    "ten_benh": "Suy tim (phân biệt dấu hiệu)",
+    "trieu_chung": "Nhịp tim thấp <60; chân tay lạnh; mệt mỏi; khó thở; hồi hộp; bàn tay ra mồ hôi",
+    "chi_so": "Nhịp tim <60 bpm là người lạnh nguy hiểm; đường huyết <6mmol/l; nhiệt độ đầu ngón tay <36°C",
+    "nguyen_nhan": "Thiếu đường; thiếu máu cơ tim; máu từ dạng lỏng thành đặc do lạnh; thiếu năng lượng cho tim",
+    "phan_biet": "Nhịp tim thấp + chân tay lạnh = thiếu đường (nội hàn); nhịp tim cao + chân tay lạnh = thiếu máu; bàn tay ra mồ hôi = thiếu đường <6mmol/l",
+    "luu_y": "Uống đường cát vàng hoặc ngâm tay trong nước nóng pha đường; theo dõi nhịp tim và nhiệt độ đầu ngón tay; không dùng thuốc Captopril"
+  },
+  {
+    "ma_benh": "PT1-11",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Bệnh 3 nhiều (tiểu khát tiêu - tiểu đường thật)",
+    "trieu_chung": "Khát nhiều uống nước nhiều; ăn nhiều; tiểu nhiều; trong người nóng; nhịp tim cao trên 100; nhiệt độ cao 37-37.5°C; tăng cân béo phì",
+    "chi_so": "Nhịp tim >100 bpm; nhiệt độ >37°C; đường huyết >200mg/dl + 3 dấu hiệu nhiều",
+    "nguyen_nhan": "Thừa đường do ăn quá nhiều và lười vận động; nóng trong người; cơ thể loại đường qua nước tiểu",
+    "phan_biet": "3 giai đoạn: thượng tiêu (tim phổi nóng), trung tiêu (bao tử nóng), hạ tiêu (thận nóng); chỉ 10-20% trong 100 người được chẩn đoán tiểu đường mới thật sự có đường trong nước tiểu",
+    "luu_y": "Không cần thuốc; uống nước mía 2-3 lít/ngày; ăn cháo đậu xanh còn vỏ; tập thể dục toát mồ hôi; chỉ 1 tuần khỏi bệnh 3 nhiều"
+  },
+  {
+    "ma_benh": "PT1-12",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "Baking Soda chữa bệnh tự miễn (viêm khớp, lupus, MS)",
+    "trieu_chung": "Viêm khớp dạng thấp; lupus; đa xơ cứng (MS); viêm đại tràng; viêm loét đại tràng",
+    "chi_so": "Đại thực bào M2 kháng viêm tăng sau uống baking soda; pH nước bọt tăng từ acid lên kiềm",
+    "nguyen_nhan": "pH acid trong cơ thể kích hoạt hệ miễn dịch tấn công chính cơ thể; thiếu bicarbonate",
+    "phan_biet": "Baking soda kích thích đại thực bào M2 kháng viêm thay vì M1 gây viêm; khác với thuốc ức chế miễn dịch của tây y",
+    "luu_y": "Uống 1/2 thìa baking soda trong nước ấm mỗi ngày trong 2 tuần; kiểm chứng bằng đo pH nước bọt trước và sau khi uống"
+  },
+  {
+    "ma_benh": "PT1-13",
+    "nhom_benh": "Huyết học",
+    "ten_benh": "Cắt lá lách - nguy hiểm",
+    "trieu_chung": "Sau cắt lá lách: mất tạo máu; giảm kháng thể; dễ nhiễm trùng nặng; lá lách to trước khi cắt gây mệt chảy máu đầy bụng",
+    "chi_so": "Lá lách to: áp huyết chân phải cao bất thường so với chân trái",
+    "nguyen_nhan": "Lá lách to do thiếu máu thiếu đường; cơ thể bù đắp bằng cách tăng hoạt động lách",
+    "phan_biet": "Lách to lành tính do thiếu máu khác với lách to do ung thư; cắt lá lách để chữa tiểu cầu cao là sai",
+    "luu_y": "Không nên cắt lá lách để chữa tăng tiểu cầu; phải chữa nguyên nhân gốc là thiếu máu thiếu đường; bổ máu và đường thì lách sẽ về kích thước bình thường"
+  },
+  {
+    "ma_benh": "PT1-14",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "YHBS dùng Baking Soda và đường đã chữa được bệnh gì",
+    "trieu_chung": "Ung thư tuyến giáp; tiểu đường thai kỳ; tiểu đường tiêm insulin bị hoại tử; viêm tai giữa; bệnh dịch COVID-19",
+    "chi_so": "pH nước bọt và mô từ acid (<6) lên kiềm (7-9) sau dùng baking soda",
+    "nguyen_nhan": "Môi trường acid là nguyên nhân gốc nhiều bệnh; baking soda kiềm hóa môi trường",
+    "phan_biet": "Baking soda + đường chữa nhiều bệnh qua kiềm hóa môi trường; khác thuốc tây chỉ điều trị triệu chứng",
+    "luu_y": "Dùng baking soda xúc miệng ngày 5 lần; xúc bao tử 1 thìa baking soda + 4-5 thìa đường trước ăn; không dùng khi áp huyết cao cả 3 số"
+  },
+  {
+    "ma_benh": "PT1-18",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Đường huyết cao thì khỏe, đường huyết thấp thì chết",
+    "trieu_chung": "Đường huyết thấp: nhịp tim thấp; chân tay lạnh; mệt mỏi; chóng mặt; ngất xỉu; đột tử; Đường huyết cao (đúng loại): người ấm khỏe",
+    "chi_so": "Tiêu chuẩn: khi đói 140mg/dl (8mmol/l); khi no 200mg/dl (11mmol/l); tối trước ngủ 180-200mg/dl",
+    "nguyen_nhan": "Tây y hạ tiêu chuẩn đường huyết quá thấp gây ra thiếu đường cho tim phổi hoạt động; đường thấp là nguyên nhân chết người thật sự",
+    "phan_biet": "Đường cao + nhịp tim bình thường + nhiệt độ bình thường = khỏe; đường thấp + nhịp tim thấp + lạnh = nguy hiểm; HbA1C không phản ánh đúng tình trạng đường",
+    "luu_y": "Không kiêng đường; uống đường cát vàng (1 thìa = +10mg/dl); theo dõi nhịp tim và nhiệt độ là tiêu chuẩn khỏe; tối ngủ đường phải đủ 180-200mg/dl"
+  },
+  {
+    "ma_benh": "PT1-19",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Calo rỗng và đường bổ sung",
+    "trieu_chung": "Mệt mỏi; thiếu năng lượng; đường huyết không đủ mặc dù ăn nhiều calo; cơ thể không tạo máu được",
+    "chi_so": "Tiêu chuẩn 2000 calo/ngày; tiêu chuẩn sau ăn 242mg/dl; mỗi giờ tiêu hao 10mg/dl đường",
+    "nguyen_nhan": "Calo rỗng từ đường bổ sung không đủ giá trị dinh dưỡng; thiếu đường dương là đường cát vàng từ mía",
+    "phan_biet": "Calo rỗng (đường trắng, fructose) khác calo dinh dưỡng (cơm, phở, đường cát vàng); cơ thể cần đủ đường glucose dương",
+    "luu_y": "Dùng đường cát vàng (đường dương); tránh đường cát trắng (đường âm); uống đủ 11mmol/l sau ăn"
+  },
+  {
+    "ma_benh": "PT1-20",
+    "nhom_benh": "Thai kỳ",
+    "ten_benh": "Hậu quả tiểu đường thai kỳ - con bị teo cơ tủy (SMA)",
+    "trieu_chung": "Teo cơ tủy sống SMA type 0,1,2,3,4; thiếu máu bẩm sinh; chậm phát triển; yếu cơ toàn thân",
+    "chi_so": "Con sanh thiếu cân; thiếu máu; enzyme SMA thấp do mẹ thiếu đường khi mang thai",
+    "nguyen_nhan": "Mẹ bầu bị cho tiêm insulin khi mang thai; thiếu đường nuôi thai nhi; thiếu máu bẩm sinh",
+    "phan_biet": "SMA thật sự do di truyền gen SMN1 khác với SMA do hậu quả thiếu đường mẹ bầu; SMA dạng 0 và 1 nặng nhất",
+    "luu_y": "Phòng ngừa: không tiêm insulin cho mẹ bầu; cho mẹ ăn nhiều cơm và thức ăn bổ; theo dõi cân nặng mẹ tăng đúng mức"
+  },
+  {
+    "ma_benh": "PT1-21",
+    "nhom_benh": "Huyết học",
+    "ten_benh": "Suy tủy xương (BMF/AA - Aplastic Anemia)",
+    "trieu_chung": "Thiếu máu nặng; mệt mỏi; dễ chảy máu; dễ nhiễm trùng; xanh xao; sốt",
+    "chi_so": "Hồng cầu thấp; bạch cầu thấp; tiểu cầu thấp; áp huyết tâm trương thấp",
+    "nguyen_nhan": "Di truyền; hóa xạ trị; độc hóa chất; thiếu đường chuyển hóa thức ăn thành máu",
+    "phan_biet": "Thiếu máu do suy tủy khác thiếu máu do thiếu sắt; cần bổ máu bằng thức ăn chứ không chỉ dùng thuốc",
+    "luu_y": "Ăn thức ăn bổ máu (phở, bún với thịt); uống đường cát vàng; theo dõi áp huyết tâm trương tay phải tăng sau ăn là máu đang tăng"
+  },
+  {
+    "ma_benh": "PT1-39",
+    "nhom_benh": "An toàn dùng thuốc",
+    "ten_benh": "Phản ứng phụ của thuốc tiêm Insulin chứa ADN người",
+    "trieu_chung": "Dùng thuốc insulin lâu dài: biến chứng mắt (mờ mắt, mù); hư thận; suy tim; hoại tử chân phải cưa; hôn mê; tử vong",
+    "chi_so": "Đường huyết tăng cao không kiểm soát khi dùng insulin lâu dài; cơ thể gầy sụt cân",
+    "nguyen_nhan": "ADN người tổng hợp không phù hợp với cơ thể; insulin ức chế chức năng gan; Somogyi Effect: insulin rút đường từ cơ bắp; kiêng đường + insulin = mất đường 2 lần",
+    "phan_biet": "Kháng insulin thật sự (béo phì) khác kháng insulin giả (cơ thể gầy sụt cân do insulin rút đường); biến chứng do thuốc không phải do đường cao",
+    "luu_y": "Nếu đường cao mà sụt cân: không phải thừa đường mà bị rút đường; phải bỏ insulin và ăn thức ăn bổ dưỡng; theo dõi cân nặng và nhịp tim"
+  },
+  {
+    "ma_benh": "PT1-40",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "Máy đo áp huyết - ý nghĩa 26 điều",
+    "trieu_chung": "Áp huyết 2 tay giống nhau: nguy hiểm sắp chết; áp huyết thay đổi trước sau ăn khác nhau là chuyển hóa tốt",
+    "chi_so": "Áp huyết chuẩn theo tuổi; chênh lệch tâm thu 2 tay phải khác nhau; tâm trương tay phải chỉ lượng máu trong gan",
+    "nguyen_nhan": "2 tay giống nhau = chức năng chuyển hóa không hoạt động; tâm thu tay trái (bao tử); tâm thu tay phải (gan); tâm trương = lượng máu",
+    "phan_biet": "Phân biệt tai biến (máu không lên não) khác đột quỵ (máu đông trong não); áp huyết tay khác chân: biết tình trạng thận và tĩnh mạch chân",
+    "luu_y": "Đo áp huyết 2 tay trước và sau ăn mỗi ngày; đo thêm 2 chân khi cần; máy đo bơm tay chính xác hơn máy cổ tay"
+  },
+  {
+    "ma_benh": "PT1-52",
+    "nhom_benh": "Áp huyết",
+    "ten_benh": "Toa thuốc đông y tăng/hạ áp huyết",
+    "trieu_chung": "Áp huyết thấp cần tăng; áp huyết cao cần hạ",
+    "chi_so": "Áp huyết trước và sau khi dùng thuốc thay đổi theo chiều mong muốn",
+    "nguyen_nhan": "Mất cân bằng khí huyết; thiếu hoặc thừa máu và khí",
+    "phan_biet": "Ba kích + Đỗ Trọng + Ngưu Tất: tăng áp huyết (cho người áp thấp); Bí ngô: hạ áp huyết; không dùng sai chiều",
+    "luu_y": "Phải đo áp huyết trước và sau khi dùng để kiểm chứng; không tự ý dùng nếu không đo áp huyết theo dõi"
+  },
+  {
+    "ma_benh": "PT1-53",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Uống đường mà đường huyết không tăng - đường đi đâu",
+    "trieu_chung": "Uống đường nhiều mà đo đường huyết không tăng hoặc còn giảm; nhịp tim và nhiệt độ thay đổi sau uống đường",
+    "chi_so": "Mỗi giờ cơ thể tiêu hao 10mg/dl; qua đêm mất 40-70mg/dl; uống nhiều nước loãng đường",
+    "nguyen_nhan": "6 trường hợp: 1-Uống đường quá nhiều nước làm loãng; 2-Đường vào điều chỉnh nhịp tim thấp; 3-Đường vào tăng nhiệt độ; 4-Đường vào hạ tâm thu cao; 5-Đường vào chuyển đàm mỡ thành máu; 6-Mất qua hoạt động ban đêm",
+    "phan_biet": "Nhai đường khô không uống nước: đường tăng nhanh; uống đường pha 1 ngụm nước/thìa: đường tăng chậm; pha nhiều nước: đường tụt",
+    "luu_y": "Nhai đường rồi uống 1 ngụm nước nhỏ cho đường tăng hiệu quả; theo dõi cả nhịp tim và nhiệt độ chứ không chỉ đường huyết"
+  },
+  {
+    "ma_benh": "PT1-54",
+    "nhom_benh": "Ung thư",
+    "ten_benh": "Tính tiêu chuẩn đường huyết không bị ung thư - đường âm dương",
+    "trieu_chung": "Ung thư giai đoạn 1-4 có áp huyết ngày càng thấp; đường âm làm pH acid; đường dương làm pH kiềm",
+    "chi_so": "4 giai đoạn ung thư theo áp huyết: T1:95/65; T2:90/60; T3:80-85/55-60; T4:75-80/50-55; chết:70-75/45-50; pH ung thư 5-6.5",
+    "nguyen_nhan": "Đường âm (cát trắng, đường y tế, nước ép rau) tạo môi trường acid cho ung thư; thiếu đường dương làm cơ thể lạnh và mất máu",
+    "phan_biet": "Đường dương (cát vàng, đường đen, mật mía): tăng nhịp tim, tăng nhiệt, chữa ung thư; Đường âm (cát trắng): giảm nhịp tim, lạnh người, gây ung thư",
+    "luu_y": "Thử đường bằng xâu chuỗi hoặc đo áp huyết trước sau 30 phút; chỉ dùng đường cát vàng hoặc đường đen; cấm đường cát trắng và đường glucose y tế"
+  },
+  {
+    "ma_benh": "PT1-59",
+    "nhom_benh": "Da liễu",
+    "ten_benh": "Da đồi mồi, mụn đầu đen, vẩy nến",
+    "trieu_chung": "Đốm đồi mồi trên da; mụn đầu đen; mụn trứng cá; vẩy nến; da thiếu sức đề kháng",
+    "chi_so": "Nồng độ kẽm Zinc trong cơ thể thấp; liều khuyến cáo 80mg kẽm/ngày; Coenzyme Q10 và Magnesium 750-1000mg/ngày",
+    "nguyen_nhan": "Thiếu kẽm Zinc kinh niên; thiếu kẽm làm giảm miễn dịch tế bào T; kẽm giảm melanin làm giảm đốm đồi mồi",
+    "phan_biet": "Đồi mồi do thiếu kẽm khác với đồi mồi do lão hóa tự nhiên; điều trị từ bên trong khác với điều trị bề mặt da",
+    "luu_y": "Hỗn hợp baking soda 2 thìa + nước chanh 1 thìa thoa lên da 15 phút; bổ sung kẽm, Coenzyme Q10, Magnesium; bổ sung kẽm từ thực phẩm (hải sản, hạt điều, hạnh nhân)"
+  },
+  {
+    "ma_benh": "PT1-60",
+    "nhom_benh": "Gan - Thận - Lách",
+    "ten_benh": "Phù nề sưng tay chân, trào ngược, chữa bằng trà mùi tây",
+    "trieu_chung": "Sưng phù chân tay bụng mặt; trào ngược acid; đầy hơi; viêm khớp; giảm hấp thu dinh dưỡng; tích nước",
+    "chi_so": "Lượng nước tiểu giảm khi bị phù nề; trà mùi tây giúp tăng lượng tiểu ra",
+    "nguyen_nhan": "Tim, gan, thận bị bệnh gây phù nề; tích nước do rối loạn chức năng thận; viêm nhiễm gây phù",
+    "phan_biet": "Phù do tim (tĩnh mạch phổi); phù do thận (protein thấp); phù do gan (ascites); phù do viêm khớp; mỗi loại cần kiểm tra áp huyết chân",
+    "luu_y": "Trà mùi tây: đun 500ml nước + 2 thìa lá mùi tây khô; uống 2 cốc/ngày (sáng chiều); uống 5-7 ngày rồi nghỉ 7 ngày; thêm mật ong và chanh"
+  },
+  {
+    "ma_benh": "PT1-61",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Máy đo đường báo HI (cao >35mmol/l) không phải bệnh tiểu đường",
+    "trieu_chung": "Máy báo HI (530-540mg/dl); người gầy sụt cân; chân tay lạnh; nhịp tim thấp; không béo phì",
+    "chi_so": "Đường HI >35mmol/l nhưng nhịp tim thấp; nhiệt độ <36°C; đang tiêm insulin; sụt cân",
+    "nguyen_nhan": "Insulin rút đường từ cơ bắp ra máu (Somogyi Effect); cơ thể thiếu đường nên rút từ mô; tỷ lệ đường/máu tăng vì lượng máu giảm (sụt cân)",
+    "phan_biet": "Đường cao thật: béo phì + nhịp tim cao + nóng người; Đường cao giả (do insulin): gầy + nhịp tim thấp + lạnh người",
+    "luu_y": "Phải bỏ thuốc tiểu đường ngay; ăn nhiều cơm và thức ăn bổ; kiểm soát bằng nhịp tim 70-80 và nhiệt độ 36-36.5°C; cân nặng tiêu chuẩn = chiều cao - 100"
+  },
+  {
+    "ma_benh": "PT1-62",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Tập bài gì để chữa tiểu đường và áp huyết cao",
+    "trieu_chung": "65 tuổi; tiểu đường; áp huyết cao; đau đầu gối; nhịp tim cao 97-101; áp huyết bất thường",
+    "chi_so": "Trước ăn: TT 101/76/97; TP 115/92/101; đường 7.6mmol/l; nhiệt độ tay 36.1°C; Sau ăn: TT 110/87/101; TP 133/84/99; đường 8.8mmol/l",
+    "nguyen_nhan": "Đường thấp không đủ tiêu chuẩn; bao tử đầy làm tăng áp huyết; tế bào thiếu đường gây đau; nhịp tim cao do thiếu máu",
+    "phan_biet": "Tiêu chuẩn sau ăn phải 11mmol/l; nhịp tim cao mà chân tay lạnh = thiếu máu (không phải nhiệt); tập thể dục làm mất đường nếu không bổ sung trước",
+    "luu_y": "Uống 10 thìa đường cát vàng rồi tập bài Nằm Lăn Người 5 phút; tập thêm Kéo Ép Gối; sau tập đo lại đường; không tập khi đường <200mg/dl"
+  },
+  {
+    "ma_benh": "PT1-63",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Canxi máu cao, rối loạn chuyển hóa, hay mệt",
+    "trieu_chung": "63 tuổi; người hay mệt; canxi máu cao; rối loạn chuyển hóa; áp huyết cao 2 tay; nhiệt độ chân thấp",
+    "chi_so": "TT 150/83/84; TP 147/77/79; chân trái 154/78/80; chân phải 140/81/78; đường 117; nhiệt độ trán 36.2°C; tay 35.9°C; chân low; pH 6",
+    "nguyen_nhan": "Tiêu chuẩn đường huyết tây y sai (3.9-6.3mmol/l); ăn ít cơm; thiếu đường; thiếu nhiệt; chức năng chuyển hóa kém",
+    "phan_biet": "Canxi máu cao do thiếu nhiệt lượng giữ canxi ở dạng lỏng; không phải bổ sung canxi mà phải bổ sung đường nhiệt; khác thiếu canxi thật sự",
+    "luu_y": "Theo tiêu chuẩn WHO 1979: đói 140mg/dl không bị tiểu đường; uống thêm đường cát vàng sau ăn cho đủ 200mg/dl; bỏ thuốc hạ đường"
+  },
+  {
+    "ma_benh": "PT1-64",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Kiêng đường - Đúng hay sai?",
+    "trieu_chung": "Người kiêng đường dùng thuốc tiểu đường: mệt mỏi uể oải; giảm sức lao động; nhiễm độc thuốc; hư gan thận; hoại tử; đột quỵ; tử vong",
+    "chi_so": "Kiêng đường + thuốc tiểu đường (Metformin, Gliclazide, Insulin) → đường huyết ngày càng cao nghịch lý",
+    "nguyen_nhan": "Kiêng đường làm cơ thể thiếu năng lượng; tuyến tụy giảm dần sản xuất insulin; insulin rút đường từ tế bào; không tạo được máu và mỡ nuôi tế bào",
+    "phan_biet": "80% người bị chẩn đoán tiểu đường thực ra bị oan; chỉ 10-20% thực sự có đường trong nước tiểu (bệnh 3 nhiều thật); điều trị đúng chỉ là điều chỉnh ăn uống",
+    "luu_y": "Không kiêng đường; bỏ thuốc hạ đường; điều chỉnh chế độ ăn uống lành mạnh; vận động sau ăn; đường cao thật sự (béo phì + 3 nhiều) chỉ cần tập thể dục"
+  },
+  {
+    "ma_benh": "PT1-65-66",
+    "nhom_benh": "Gan - Thận - Lách",
+    "ten_benh": "Gan nhiễm mỡ - nguyên nhân và cách chữa",
+    "trieu_chung": "Gan nhiễm mỡ; mỡ đặc trong gan; người lạnh nhịp tim thấp; nhiệt độ chân tay thấp; chán ăn",
+    "chi_so": "Nhịp tim bên gan (tay phải) thấp <65; nhiệt độ chân tay <34°C; đường huyết thấp không đủ nhiệt",
+    "nguyen_nhan": "Thiếu đường chuyển hóa mỡ; thiếu nhiệt lượng làm mỡ đóng đặc trong gan; lười vận động; không vận động sau ăn",
+    "phan_biet": "Gan nhiễm mỡ do lạnh (nhịp tim thấp, chân tay lạnh) khác do nóng (nhịp tim cao); insulin không thể tan mỡ trong gan vì cần nhiệt mới tan",
+    "luu_y": "Vận động thể dục sau ăn cho ra mồ hôi; tập bài Kéo Ép Gối Thổi Hơi Ra làm Mềm Bụng 300 lần; chườm túi nóng trên gan kết hợp tập để tuyến tụy sản xuất insulin nội tạo"
+  },
+  {
+    "ma_benh": "PT1-67",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Ma trận tiểu đường - Không uống đường mà đường huyết vẫn cao",
+    "trieu_chung": "Không ăn đường mà đường cao; sụt cân; chân tay lạnh; nhịp tim cao; tây y gọi là kháng insulin",
+    "chi_so": "Tỷ lệ đường: kiêng đường → máu giảm → đo đường trong ít máu hơn = đường huyết tỷ lệ cao; máu 5L đường 10mmol/l → máu 3L đường 15mmol/l",
+    "nguyen_nhan": "Sụt cân = lượng máu giảm → tỷ lệ đường/máu tăng; insulin rút đường từ cơ bắp; cơ thể đốt đường từ mô để duy trì tim phổi",
+    "phan_biet": "Đường cao thật (béo phì): uống nhiều nước/tập thể dục hạ đường; Đường cao giả (sụt cân): bỏ insulin và ăn nhiều",
+    "luu_y": "Phân biệt đường cao thật với đường cao giả bằng: cân nặng (tăng/giảm), nhịp tim (cao với nóng người/thấp với lạnh người), nhiệt độ da"
+  },
+  {
+    "ma_benh": "PT1-68",
+    "nhom_benh": "Tiêu hóa",
+    "ten_benh": "Baking soda và đường làm thay đổi áp huyết",
+    "trieu_chung": "Áp huyết cao sau ăn; đường huyết tụt; bụng chướng đầy; uống đường vào áp huyết còn lên; bao tử tắc",
+    "chi_so": "Tay trái 139/97/87; Tay phải 139/92/83; đường 92mg/dl; sau baking soda: Tay trái 105/72/84; Tay phải 107/76/83; đường 117mg/dl",
+    "nguyen_nhan": "Bao tử bị bã thức ăn đóng cục chặn hạ môn vị (cửa xuống ruột); uống gì cũng bị giữ lại và trào ngược; trà Phan Tả Diệp gây tiêu chảy làm mất đường",
+    "phan_biet": "Áp huyết cao do bao tử tắc nghẽn khác áp huyết cao thật; uống đường không đủ (loãng quá nước) làm tụt đường; baking soda xúc bao tử sau đó áp huyết giảm",
+    "luu_y": "1 thìa baking soda + 4-5 thìa đường + tập Nằm Lăn Người = xúc thông bao tử và ruột; gạo lứt và yaourt làm tụt đường mất máu; không uống đường với quá nhiều nước"
+  },
+  {
+    "ma_benh": "PT1-69",
+    "nhom_benh": "Áp huyết",
+    "ten_benh": "Uống thuốc hạ áp huyết suốt đời là sai",
+    "trieu_chung": "Cao áp huyết thật vs cao áp huyết do thức ăn; áp huyết thay đổi theo từng bữa ăn; uống thuốc làm liệt dương; chân tay chùng gân",
+    "chi_so": "3 nguyên nhân: Tinh (thức ăn), Khí (tiêu hóa), Thần (tâm lý); thuốc giãn mạch, chẹn giao cảm, lợi tiểu gây tác dụng phụ lâu dài",
+    "nguyen_nhan": "Không biết nguyên nhân cụ thể gây cao áp huyết; thuốc hạ áp huyết không chữa nguyên nhân; kinh doanh bệnh khi dùng thuốc suốt đời",
+    "phan_biet": "Cao áp huyết do thức ăn cay nóng (tạm thời); do ăn không tiêu đầy bụng (tạm thời); do nóng giận (tâm lý); mỗi nguyên nhân cần cách xử lý khác nhau",
+    "luu_y": "Đo áp huyết 2 tay để biết nguyên nhân: tay trái (bao tử), tay phải (gan); không uống thuốc khi áp huyết đã xuống thấp; tìm và chữa nguyên nhân gốc"
+  },
+  {
+    "ma_benh": "PT1-70",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "Phải tự tìm nguyên nhân bệnh qua các con số đo",
+    "trieu_chung": "Nhịp tim thấp; đường huyết thấp; nhiệt độ chân thấp; thức ăn không chuyển hóa thành máu sau khi ăn",
+    "chi_so": "Sáng: TT 107/60/60; TP 103/60/58; đường 91; nhiệt 35.9°C; Sau ăn: TT 113/60/66; TP 113/57/63; đường 155mg/dl; nhiệt 36.3°C",
+    "nguyen_nhan": "Không đo đường trước khi tập; tập mà thiếu đường làm mất thêm đường; ăn phở không tăng máu vì thiếu đường chuyển hóa",
+    "phan_biet": "Tâm thu 2 tay giống nhau = thức ăn không chuyển hóa thành máu; tâm trương tay phải không tăng sau ăn = ăn không bổ máu",
+    "luu_y": "Định lý: đường + protein mới biến thành máu; đủ đường thì bộ máy tiêu hóa mới hoạt động; không tập khi đường <200mg/dl"
+  },
+  {
+    "ma_benh": "PT1-71",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Đường cát vàng chữa được hơn 100 bệnh",
+    "trieu_chung": "Chóng mặt (thiếu đường); hồi hộp suy tim; mồ hôi lạnh ban đêm; mồ hôi tay; mất ngủ; nhiều bệnh mãn tính liên quan thiếu đường",
+    "chi_so": "Đường <6mmol/l gây ra hơn 100 loại bệnh; tiêu chuẩn đói 8mmol/l; tiêu chuẩn no 11mmol/l",
+    "nguyen_nhan": "Tây y hạ tiêu chuẩn đường huyết xuống 3.9-5.9mmol/l → gây thiếu đường → hơn 100 bệnh; kinh doanh bệnh tật",
+    "phan_biet": "100+ bệnh từ thiếu đường: thoái hóa xương, tiểu đường, ung thư, suy tim, mất trí nhớ, gan nhiễm mỡ, sạn thận, mắt mờ, parkinson, trầm cảm...",
+    "luu_y": "Dùng đường cát vàng để chữa nguyên nhân gốc (thiếu đường); theo dõi nhịp tim 70-80 và nhiệt độ 36-36.5°C là chỉ số khỏe; 1 thìa đường = +10mg/dl"
+  },
+  {
+    "ma_benh": "PT1-72",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "Baking Soda - Tổng hợp công dụng",
+    "trieu_chung": "Ung thư; viêm họng; viêm tai giữa; ăn không tiêu; pH acid; nhiễm COVID-19; vết loét hoại tử da",
+    "chi_so": "Baking soda pH 9 kiềm hóa môi trường acid của ung thư (pH 5-6.9); tế bào ung thư chết trong môi trường kiềm",
+    "nguyen_nhan": "Môi trường acid pH <7 làm vi khuẩn và tế bào ung thư phát triển; thiếu bicarbonate",
+    "phan_biet": "Baking soda + đường: xúc bao tử và ruột; Baking soda khò họng: diệt khuẩn; Baking soda uống: kiềm hóa pH máu; Baking soda thoa da: tẩy tế bào chết",
+    "luu_y": "Công thức chuẩn: 1 thìa baking soda + 4-5 thìa đường; không dùng khi áp huyết cao cả 3 số; kiểm chứng bằng giấy quỳ pH trước và sau khi dùng"
+  },
+  {
+    "ma_benh": "PT1-73",
+    "nhom_benh": "Ung thư",
+    "ten_benh": "Đường âm gây ung thư - Đường dương chữa ung thư",
+    "trieu_chung": "Ung thư phát triển khi dùng đường âm; cơ thể lạnh; nhịp tim thấp; pH acid; đường dương làm ấm người khỏe",
+    "chi_so": "Đường âm (cát trắng): giảm nhịp tim; Đường dương (cát vàng/đường đen): tăng nhịp tim, tăng nhiệt; pH đường dương >7",
+    "nguyen_nhan": "Đường cát trắng có tính âm (pH acid); đường cát vàng/đường đen có tính dương (pH kiềm); cùng công thức C6H12O6 nhưng tính âm dương khác nhau",
+    "phan_biet": "Thử bằng chuỗi tràng hạt: dương = xoay thuận kim đồng hồ; âm = xoay ngược; Thử bằng máy đo: dương làm tăng nhịp tim tăng nhiệt; âm làm giảm",
+    "luu_y": "Cấm đường cát trắng và đường glucose y tế (đường âm); dùng đường cát vàng, đường đen (mật mía) là đường dương; sáng: gừng tươi 15g + cục đường đen 15g nấu uống nóng"
+  },
+  {
+    "ma_benh": "PT1-74",
+    "nhom_benh": "Tiêu hóa",
+    "ten_benh": "Mật ong và nghệ - lợi hay hại khi dùng sai",
+    "trieu_chung": "Sau khi dùng mật ong nghệ lâu dài: ăn không được; bao tử không co bóp; teo bao tử; ung thư bao tử",
+    "chi_so": "Áp huyết: TT 100/66/55; TP 96/65/54; đường 95mg/dl; nhiệt tay 35.3°C; chân 31-32°C; pH 6",
+    "nguyen_nhan": "Mật ong dạng sệt bít lỗ loét bao tử nhưng lâu dài làm dày vách bao tử; mật ong lâu ngày làm giảm thể tích chứa thức ăn; bao tử teo không co bóp được",
+    "phan_biet": "Mật ong nghệ chữa loét bao tử ngắn hạn (tốt); dùng lâu dài (hại); mật ong không thể thay thế đường cát vàng để cung cấp năng lượng nhiệt lượng cho cơ thể",
+    "luu_y": "Chữa bao tử tắc nghẽn bằng baking soda + đường + Lăn Người trước khi ăn; chữa loét bao tử bằng mật ong nghệ không quá 2-4 tuần; luôn kiểm tra bằng máy đo"
+  },
+  {
+    "ma_benh": "PT1-75",
+    "nhom_benh": "Tim mạch",
+    "ten_benh": "Phân tích áp huyết tìm nguyên nhân bệnh - nhịp tim cao + tức ngực",
+    "trieu_chung": "29 tuổi; nhịp tim cao 101-105; tức ngực ban ngày khó thở; chân trái tắc khí; mặt nổi mụn; ho khụ khụ khi tập",
+    "chi_so": "Trước ăn: TT 116/79/105; TP 125/82/103; Chân T 172/110/101; Sau ăn: TT 130/85/105; TP 119/82/103; đường 125-145mg/dl",
+    "nguyen_nhan": "Nhịp tim cao + thiếu máu; bao tử thiếu đường co bóp gây khó thở (bao tử là con/phổi là mẹ theo ngũ hành); ứ đọng mỡ ở chân trái",
+    "phan_biet": "Nhịp tim cao mà chân tay lạnh = thiếu máu (không phải nhiệt); chân trái áp huyết cao hơn chân phải = tắc khí động mạch háng trái; mụn mặt do nhịp tim cao + thiếu máu",
+    "luu_y": "Sau mỗi bữa ăn: xay 100g bí đỏ + 1 ly nước uống sau ăn 30 phút hạ áp huyết hạ nhịp tim; không tập võ khi thiếu đường; tập bài Thụt Dầu cho thông khí chân"
+  },
+  {
+    "ma_benh": "PT1-77",
+    "nhom_benh": "Ung thư",
+    "ten_benh": "Ung thư tuyến nước bọt dưới lưỡi - u ở cằm",
+    "trieu_chung": "Cằm sưng to cứng; nhiều gân xanh nổi lên dưới cằm; xương cằm biến dạng; không đau nhưng cứng",
+    "chi_so": "Đường huyết 6-8mmol/l (thiếu); áp huyết thấp; thiếu máu thiếu đường; cột sống lưng cổ yếu kêu sần sật",
+    "nguyen_nhan": "Thiếu khí thiếu máu thiếu đường; máu không thông qua vùng cằm; hàn lạnh làm tế bào kết thành khối u cứng; pH acid",
+    "phan_biet": "U cằm do thiếu máu/đường/khí khác ung thư tuyến nước bọt do nhiễm trùng; sưng không đau (hàn); sưng có đau đỏ (nhiệt)",
+    "luu_y": "Sáng uống gừng + cục đường đen; ngậm baking soda + đường xúc miệng; dùng máy sấy tóc hơ nóng cằm + xoa bóp; theo dõi áp huyết tối trước ngủ đường phải 200mg/dl"
+  },
+  {
+    "ma_benh": "PT1-79",
+    "nhom_benh": "Gan - Thận - Lách",
+    "ten_benh": "Nước tiểu có đường chưa chắc bị tiểu đường",
+    "trieu_chung": "50 tuổi; làm thợ xây (lao động nặng); đường huyết cao 15.7mmol/l; nước tiểu có đường; cân nặng 55kg/cao 169cm (thiếu cân)",
+    "chi_so": "Trước ăn: TT 107/73/79; TP 118/75/77; đường 15.7mmol/l; nhiệt độ trán 36.6°C; ngón tay 36°C; ngón chân 33.3°C; pH 7",
+    "nguyen_nhan": "Lao động nặng mất đường nhiều; thận hàn (nhiệt độ chân 33.3°C) nên thận loại đường thừa ra nước tiểu; tỷ lệ đường/ít máu = đường tỷ lệ cao",
+    "phan_biet": "Nước tiểu có đường + thận hàn = thận tự điều chỉnh; nước tiểu có đường + nhịp tim cao + nóng người = tiểu đường thật (bệnh 3 nhiều)",
+    "luu_y": "Tập bài Thụt Dầu làm ấm chân cho nhiệt độ chân lên 36°C; đo đường trước và sau khi làm việc để biết mất bao nhiêu; ăn bổ dưỡng hơn để tăng cân về chuẩn"
+  },
+  {
+    "ma_benh": "PT1-80",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "Liên quan đường huyết - nhịp tim - nhiệt độ",
+    "trieu_chung": "3 trường hợp: khỏe (cả 3 trong chuẩn); bệnh 3 nhiều (nhịp tim cao + nhiệt độ cao); thiếu máu (nhịp tim cao + nhiệt độ thấp)",
+    "chi_so": "4 giai đoạn ung thư: T1:95/65; T2:90/60; T3:80-85/55-60; T4:75-80/50-55; chết:70-75/45-50mmHg",
+    "nguyen_nhan": "3 yếu tố gây bệnh không hòa hợp: đường huyết, nhịp tim, nhiệt độ; mỗi loại bệnh có pattern khác nhau",
+    "phan_biet": "Nhịp tim cao + nhiệt độ cao = nóng (3 nhiều); Nhịp tim cao + nhiệt độ thấp = thiếu máu; Nhịp tim thấp + nhiệt độ thấp = thiếu đường; Áp huyết ung thư giả (nhịp tim cao giả): trừ nhịp tim thừa từ tâm thu",
+    "luu_y": "Đường huyết bao nhiêu không quan trọng bằng nhịp tim và nhiệt độ đều trong tiêu chuẩn; 3 nhóm bệnh cần 3 cách chữa khác nhau hoàn toàn"
+  },
+  {
+    "ma_benh": "PT1-81",
+    "nhom_benh": "Thai kỳ",
+    "ten_benh": "Không có bệnh tiểu đường thai kỳ đích thực",
+    "trieu_chung": "Bà mẹ mang thai đường huyết cao theo tiêu chuẩn tây y; được chẩn đoán tiểu đường thai kỳ; uống thuốc hoặc tiêm insulin",
+    "chi_so": "Cân nặng mẹ bầu phải tăng 3-4kg để có sức sanh con; tiêu chuẩn sau ăn thai kỳ 242mg/dl; con sanh phải 2-3kg",
+    "nguyen_nhan": "Tây y VN hiểu sai tiêu chuẩn; tiêu chuẩn thật sự chỉ lo khi mẹ tăng cân nhanh quá (sanh con nặng >4kg khó sanh); không phải do đường huyết cao",
+    "phan_biet": "Tiểu đường thai kỳ thật (mẹ béo phì, con >4kg) cần giảm ăn/vận động; Tiểu đường thai kỳ giả (mẹ bình thường, đường cao từ cơm) không cần dùng thuốc",
+    "luu_y": "Không tiêm insulin thai kỳ; ăn cơm nhiều bình thường; cao 1.55m: trước sanh nặng 59-60kg; tập Vỗ Tay 4 nhịp và Nằm Đá Gót Chân vào Mông nhẹ nhàng"
+  },
+  {
+    "ma_benh": "PT1-82",
+    "nhom_benh": "An toàn dùng thuốc",
+    "ten_benh": "Sai lầm khi uống thuốc Bắc không kiểm chứng bằng máy đo",
+    "trieu_chung": "35 tuổi nam; 44kg/168cm (thiếu 24kg); tiêu chảy phân nát; di tinh 5-6 lần/ngày; mụn mủ; uể oải buồn ngủ; khó tập trung; sụt cân",
+    "chi_so": "Trước ăn: TT 100/66/55; TP 96/65/54; đường 95mg/dl; nhiệt tay 35.3°C; chân 31-32°C; pH 6",
+    "nguyen_nhan": "Uống thuốc bắc (Phụ Tử Lý Trung Hoàn, Bát Trân, Bát Vị Quế Phụ) không kiểm chứng bằng máy đo; thuốc không phù hợp làm hại thêm; bao tử tắc thức ăn không tiêu",
+    "phan_biet": "Thiếu khí (tâm thu thấp) + thiếu máu (tâm trương thấp) + nội hàn (nhịp tim 54-55) + ngoại hàn (nhiệt độ thấp) = thiếu đường trầm trọng",
+    "luu_y": "Sáng uống gừng + đường đen; ăn phở xay lỏng uống như sinh tố; uống coca sau ăn cho tiêu hóa; uống Whey Protein 2 thìa + 1 thìa đường cát vàng; tập Nằm Lăn Người + Thụt Dầu"
+  },
+  {
+    "ma_benh": "PT1-83",
+    "nhom_benh": "Áp huyết",
+    "ten_benh": "Thức ăn làm thay đổi áp huyết - máy đo áp huyết kiểm soát thức ăn",
+    "trieu_chung": "Áp huyết cao sau ăn; phở bò tăng máu; phở gà mất máu; bổ sung gừng đường đen khi áp huyết thấp",
+    "chi_so": "Bệnh nhân ung thư T3: tay phải 86/60/103; sau phở bò: 96/68/108; sau phở xay: 100/70/88; sau phở gà: 72/46/92",
+    "nguyen_nhan": "Thức ăn khác nhau làm thay đổi áp huyết theo chiều khác nhau; phở bò (gừng nướng, quế, hồi) tăng khí máu; phở gà không có các chất đó",
+    "phan_biet": "Thức ăn tăng áp huyết: phở bò, lẩu thái, coca; Thức ăn hạ áp huyết: bún mì, canh chua, pepsi, nước mía; Nguyên tắc: ăn đúng thức ăn theo chiều cần điều chỉnh",
+    "luu_y": "Luôn đo áp huyết trước và sau ăn 30 phút; chọn thức ăn dựa vào kết quả đo; nếu áp huyết thấp: phở bò, uống gừng đường đen; nếu cao: bún, mì, pepsi"
+  },
+  {
+    "ma_benh": "PT1-84",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Hạ đường huyết không dùng thuốc - rất dễ",
+    "trieu_chung": "Đường huyết cao không phải bệnh tiểu đường; uống nhiều nước làm đường loãng xuống; tập thể dục hạ đường",
+    "chi_so": "Tỷ lệ đường/lượng máu: 15mmol/l trong 5L máu; uống 1L nước thêm = máu 6L → đường loãng xuống thấp; 37g đường là tiêu chuẩn thử tiểu đường",
+    "nguyen_nhan": "Đường huyết cao = tỷ lệ đường/máu cao; uống nước làm loãng tỷ lệ; tập thể dục tiêu hao năng lượng đường; không cần thuốc insulin",
+    "phan_biet": "3 cách hạ đường không cần thuốc: 1-Uống nhiều nước; 2-Uống nước mía; 3-Tập thể dục toát mồ hôi; chỉ dùng thuốc khi đường >10mmol/l mà không uống nước và không tập",
+    "luu_y": "Không bao giờ dùng thuốc hạ đường khi đường thấp; thuốc tiểu đường gây chết người ở trung tâm dưỡng lão khi y tá tiêm insulin đúng giờ dù bệnh nhân không ăn"
+  },
+  {
+    "ma_benh": "PT1-85",
+    "nhom_benh": "Mắt",
+    "ten_benh": "Mắt mù do tiểu đường - chữa bằng day huyệt và bổ đường",
+    "trieu_chung": "Mù mắt (chỉ nhìn mờ mờ); đang tiêm insulin; đường huyết thấp 70-100mg/dl theo tiêu chuẩn sai",
+    "chi_so": "Đường lên mắt tốt nhất: 120-130mg/dl; <100mg/dl = mù mắt; >140mg/dl = mờ mắt; nguồn đường đo ở tay phải phải ≥140mg/dl",
+    "nguyen_nhan": "Tây y hạ đường <100mg/dl làm thiếu đường lên mắt; thần kinh thị giác thiếu máu thiếu đường; gan thận kém làm mắt tối",
+    "phan_biet": "Mù do đường thấp (không đủ năng lượng cho thần kinh thị giác) khác mù do đục thủy tinh thể (cơ học); cách chữa hoàn toàn khác nhau",
+    "luu_y": "Day 6 huyệt mắt: Toản Trúc (đầu lông mày), Ngư Yêu (giữa), và các huyệt xung quanh; Tả (ngược kim đồng hồ 36 lần) khi đường cao; Bổ (thuận chiều 36 lần) khi đường thấp; day Huyệt Chẩm sau ót 36 lần bổ luôn luôn"
+  },
+  {
+    "ma_benh": "PT1-91",
+    "nhom_benh": "Gan - Thận - Lách",
+    "ten_benh": "Tự lọc thận bằng bài tập lạy ngồi lạy Phật",
+    "trieu_chung": "Suy thận; phù nề; bí tiểu; uống 1L tiểu ra <1L; sưng phù mặt chân tay bụng",
+    "chi_so": "Thận tốt: uống 1L nước lọc tiểu ra 1L; Thận kém: uống 1L tiểu ra 0.5L, còn lại 0.5L tích trong cơ thể; Trà xanh: uống 250cc tiểu ra 500cc = hồi phục chức năng thận",
+    "nguyen_nhan": "Thận suy chức năng lọc; cơ thể tích nước gây phù; thiếu đường và nhiệt làm thận hàn kém lọc",
+    "phan_biet": "Suy thận nhẹ: tiểu ít; Suy thận nặng: phải lọc thận 3 ngày/tuần; Thận phục hồi: tiểu nhiều hơn nước uống vào",
+    "luu_y": "Trước tập lạy Phật: uống 0.5L nước mía (đường thấp) hoặc trà xanh đặc (đường cao); theo dõi lượng tiểu ra so với nước uống vào; tập 15 phút xem kết quả"
+  },
+  {
+    "ma_benh": "PT1-92",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Đường máu cao có hại - phân tích đúng sai",
+    "trieu_chung": "5 trường hợp đường cao khác nhau: thật (béo phì 3 nhiều); giả (sụt cân); do insulin; do kiêng ăn; do thuốc",
+    "chi_so": "15 hậu quả của đường máu cao (theo tây y); phân tích từng hậu quả theo YHBS; tiêu chuẩn WHO 1979: 200mg/dl sau ăn",
+    "nguyen_nhan": "Phần lớn biến chứng là do thuốc chữa tiểu đường (insulin, Metformin) không phải do đường; kiêng đường + thuốc = mất đường 2 lần",
+    "phan_biet": "Đường cao thật (béo phì): giảm ăn + tập thể dục; Đường cao giả (sụt cân): bổ sung đường ngay; ALT/AST giảm sau uống đường = tốt, không phải che giấu tổn thương gan",
+    "luu_y": "15 biến chứng của tây y đều có thể giải thích bằng YHBS; kiểm tra bằng 4 máy: áp huyết, đường, nhiệt kế, pH; uống đường hạ sốt là cơ chế tự nhiên đúng"
+  },
+  {
+    "ma_benh": "PT1-93",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "Nhịp tim quan trọng nhất để giải đáp về đường và tiểu đường",
+    "trieu_chung": "Tất cả các bệnh nhìn vào nhịp tim biết: nóng (>80), lạnh (<70), trong chuẩn (70-80); kết hợp với nhiệt độ da xác định bệnh",
+    "chi_so": "Áp huyết tiêu chuẩn theo tuổi; 4 giai đoạn ung thư theo áp huyết; công thức tính áp huyết thật từ áp huyết giả khi nhịp tim cao",
+    "nguyen_nhan": "Nhịp tim = nhiệt độ bên trong; cao >80 = nóng hoặc thiếu máu; thấp <70 = lạnh thiếu đường; 70-80 = khỏe; kết hợp nhiệt độ da xác định thêm",
+    "phan_biet": "Nhịp tim cao + da nóng = sốt nhiễm trùng; Nhịp tim cao + da lạnh = thiếu máu; Nhịp tim thấp + da lạnh = thiếu đường; Áp huyết ung thư giả = nhịp tim cao bù cho thiếu máu",
+    "luu_y": "Đường bao nhiêu không quan trọng bằng nhịp tim và nhiệt độ trong tiêu chuẩn; 1 công thức tính áp huyết thật: tâm thu thật = tâm thu giả - (nhịp tim giả - 80)"
+  },
+  {
+    "ma_benh": "PT1-94",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Giác ngộ sự khác nhau giữa đường và chất ngọt - thoát khỏi tiểu đường",
+    "trieu_chung": "Máy đo đường thực ra là máy đo chất ngọt (sucrose); 4 người ăn khác nhau cùng bị kết tội tiểu đường oan vì không biết đổi hối suất",
+    "chi_so": "Hối suất: đường sucrose (MW 342) / glucose (MW 180) = 34.2/18 = 1.9; đo chất ngọt 200mg/dl ÷ 1.9 = đường glucose thực 105mg/dl",
+    "nguyen_nhan": "Máy đo đường thực chất đo chất ngọt (sucrose); bác sĩ không biết đổi hối suất nên kết tội tiểu đường sai; phương pháp kìm-kẹp tiêu chuẩn thấp gây chết người",
+    "phan_biet": "Người ăn 1/2 chén cơm (sucrose): máy đo 7mmol/l oan → đổi ra glucose chỉ 5.8mmol/l không phải tiểu đường; người uống 4 thìa đường khô: glucose thật = đọc trên máy",
+    "luu_y": "Bỏ tiêu chuẩn hiện hành của tây y; dùng tiêu chuẩn WHO 1979: đói 140mg/dl, no 200mg/dl; uống thêm nước khi đường huyết cao thật; không dùng insulin"
+  },
+  {
+    "ma_benh": "PT1-95",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Phương pháp kìm-kẹp ngăn chặn tiểu đường phản tác dụng",
+    "trieu_chung": "Ngày càng nhiều người bị chẩn đoán tiểu đường; đột quỵ suy tim tử vong tăng; người dùng thuốc hạ đường chết nhiều hơn không dùng",
+    "chi_so": "Tiêu chuẩn kìm-kẹp hiện hành (66-99)mg/dl = quá thấp; đổi ra glucose thật: 66÷2=33mg/dl; 99÷2=50mg/dl → chết vì thiếu đường",
+    "nguyen_nhan": "Tây y liên tục hạ tiêu chuẩn đường huyết; kinh doanh bệnh tật; dùng tiêu chuẩn sucrose (342) áp dụng cho glucose (180) = sai hoàn toàn",
+    "phan_biet": "Tiêu chuẩn WHO 1979 (đúng): 140mg/dl đói, 200mg/dl no; Tiêu chuẩn phương pháp kìm hiện tại (sai): 66-99mg/dl = gây thiếu đường chết người",
+    "luu_y": "Phương pháp kìm-kẹp là nguyên nhân tăng tỷ lệ suy tim đột quỵ; bỏ tiêu chuẩn sai; uống đường bổ sung sau ăn để đạt 200mg/dl; không dùng insulin nếu không béo phì"
+  },
+  {
+    "ma_benh": "PT1-96",
+    "nhom_benh": "An toàn chăm sóc",
+    "ten_benh": "Người già chết sặc thức ăn - nguyên nhân và phòng tránh",
+    "trieu_chung": "Người già yếu sức sặc thức ăn vào phổi; nhiễm trùng phổi; cần thở máy; chết đột ngột khi ăn tư thế nằm/ngửa cổ",
+    "chi_so": "2 ống ở họng: thực quản (thức ăn) và khí quản (khí); khi cổ ngửa sau lưỡi khóa không che được khí quản",
+    "nguyen_nhan": "Cho ăn tư thế nằm; cổ bị ngửa ra sau khi ăn; lưỡi không che được khí quản; thức ăn lọt vào phổi",
+    "phan_biet": "Chết sặc do tư thế ăn sai (cổ ngửa) vs chết sặc do tai biến liệt lưỡi; bệnh thực vật do ăn nằm khác chết sặc nhanh",
+    "luu_y": "Luôn cho ăn tư thế ngồi hoặc đầu hơi cúi về phía trước; không cho cổ ngửa ra sau khi ăn; người không ngồi được: nằm nghiêng 30-45°; tập cho người bệnh ngồi dậy và đi lại sớm"
+  },
+  {
+    "ma_benh": "PT1-97",
+    "nhom_benh": "An toàn dùng thuốc",
+    "ten_benh": "Thuốc Captopril hạ nhịp tim - nguy hiểm khi tập phục hồi",
+    "trieu_chung": "Bệnh nhân tai biến tê liệt đang dùng Captopril; nhịp tim thấp; yếu sức; không thể tập đi; nguy cơ ngất khi tập",
+    "chi_so": "33 tác dụng phụ của Captopril bao gồm: hạ áp huyết, yếu cơ, chóng mặt, co giật, tổn thương gan thận, tăng kali máu có thể tử vong",
+    "nguyen_nhan": "Captopril hạ nhịp tim = làm lạnh người thêm; cơ thể thiếu máu do tai biến lại dùng thuốc hạ máu; tập đi thiếu đường làm ngã té",
+    "phan_biet": "Nhịp tim cao do thiếu máu (không phải nhiệt) cần bổ máu; không dùng Captopril hạ nhịp tim trong trường hợp thiếu máu; khác cao áp huyết do nóng (cần hạ)",
+    "luu_y": "Đo áp huyết 2 tay 2 chân trước khi tập; đường huyết phải 200mg/dl trước khi tập; sau 15 phút tập nghỉ và đo lại; mỗi 15 phút uống thêm 6 thìa đường; không dùng Captopril khi thiếu máu"
+  },
+  {
+    "ma_benh": "PT2-98",
+    "nhom_benh": "Tim mạch",
+    "ten_benh": "Tê liệt ngất xỉu đột quỵ do thiếu đường khi lao động nắng nóng",
+    "trieu_chung": "49 tuổi; ra đồng làm việc trưa nắng; té ngất xỉu; tê liệt nửa người trái; sụp mí mắt; lưỡi méo qua phải; chân lạnh cứng; thở yếu; ăn được ít",
+    "chi_so": "Trước ăn: TT 98/73/74; TP 106/77/76; Chân trái 99/64/76; Chân phải 103/70/77; Sau ăn: TT 125/73/78; TP 100/69/72; đường huyết sau ăn 4.5mmol/l (thiếu trầm trọng cần 11mmol/l)",
+    "nguyen_nhan": "Thiếu đường trầm trọng; lao động nặng nắng nóng làm mất đường qua mồ hôi; đường huyết tụt gây tê liệt thần kinh",
+    "phan_biet": "Tê liệt do thiếu đường khác tê liệt do cục máu đông; đường thấp 4.5mmol/l mà vẫn bị liệt chứ không cần đường cao mới nguy hiểm",
+    "luu_y": "Nước gừng nóng + 10 thìa đường cát vàng; chân ấm lại khi đường tăng lên 9.6mmol/l; tập đứng lên ngồi xuống; dùng khung xe tập đi; Whey Protein + đường cát vàng mỗi ngày"
+  },
+  {
+    "ma_benh": "PT2-99",
+    "nhom_benh": "Tim mạch",
+    "ten_benh": "Dấu hiệu cảnh báo trước tai biến và đột quỵ qua máy đo áp huyết",
+    "trieu_chung": "TH1 tai biến: AH TT >180/100 nhịp <65; TH2 đột quỵ: AH TT >150/100 nhịp <62; chân tay lạnh <35 độ C; khó thở tức ngực; không hạ được bằng thuốc",
+    "chi_so": "TH1: TT tay trái >180/100 nhịp <65; TH2: TT 150/100/62; TP 145/100/58; nhiệt độ tay chân <35 độ C",
+    "nguyen_nhan": "TH1: Bao tử hàn lạnh ăn không tiêu làm tăng áp huyết; TH2: Máu đặc do lạnh không về tim được làm hở van tim; cả 2 do thiếu đường",
+    "phan_biet": "Tai biến (máu không lên não) vs đột quỵ (máu đông không về tim); AH cao + nhịp thấp nguy hiểm hơn AH cao đơn thuần",
+    "luu_y": "TH1: Chanh + 5 thìa đường; nhịn ăn; uống senna thông ruột. TH2: Nước gừng nóng + 10 thìa đường; nằm nghỉ; đo lại khi nhịp tăng >70 là máu đã lỏng trở lại"
+  },
+  {
+    "ma_benh": "PT2-101",
+    "nhom_benh": "Tim mạch",
+    "ten_benh": "Chết oan do tai biến đột quỵ vì không đo áp huyết và đường trước khi ăn",
+    "trieu_chung": "TH1: Sau ăn tức ngực mệt tim khó thở trướng bụng; AH 185/95/58; thuốc hạ AH không xuống; chết oan. TH2: AH 150/92/55; đường 150mg/dl; tức ngực khó thở; tiêm insulin bệnh nhân hôn mê tử vong",
+    "chi_so": "TH1: AH 185/95 nhịp 58; trước ăn 150/85/60 (dấu hiệu nguy hiểm). TH2: AH 150/92/55; đường 150mg/dl; sau tiêm insulin nhịp xuống thêm máu đặc tim ngưng",
+    "nguyen_nhan": "TH1: Bao tử hàn lạnh thức ăn tắc đáy phễu; thuốc không xuống ruột không phát huy tác dụng. TH2: Insulin làm hạ đường khiến nhịp tim xuống thấp máu đặc không về tim",
+    "phan_biet": "Phải đo AH và đường TRƯỚC khi ăn để phát hiện nguy cơ; nếu AH cao trước ăn thì nhịn hoặc ăn nhẹ; không tiêm insulin khi nhịp tim đã thấp <60; thuốc hạ AH không hiệu quả khi bao tử tắc",
+    "luu_y": "Nếu AH cao trước ăn: nhịn ăn hoặc ăn cháo súp rau củ. Không uống thuốc hạ AH khi bao tử tắc. Không tiêm insulin khi nhịp tim thấp. Cấp cứu đột quỵ cần đường + hô hấp nhân tạo"
+  },
+  {
+    "ma_benh": "PT2-102",
+    "nhom_benh": "Tim mạch",
+    "ten_benh": "Chết oan vì tai biến đột quỵ do thiếu đường ở người không bị tiểu đường",
+    "trieu_chung": "TH1: Thiếu máu lên đầu; tắc mạch máu não; chóng mặt; té ngã khi tắm biển hoặc tắm lạnh ban đêm. TH2: Nhịp tim thấp đột ngột <55; máu đặc không chảy về tim; suy tim đột quỵ",
+    "chi_so": "Nhịp tim <55 = máu đặc cục máu đông; nhiệt độ vùng đầu thấp = tắc mạch máu não; bàn tay lạnh <34 độ C = thiếu đường; uống 5 thìa đường bàn tay tăng từ 34 lên >36 độ C",
+    "nguyen_nhan": "Kiêng đường dù không bị tiểu đường; thiếu đường làm máu chuyển từ lỏng sang đặc; mạch máu não hoặc ống về tim bị tắc; tắm lạnh co mạch đột ngột khi thiếu đường",
+    "phan_biet": "Không bị tiểu đường không có nghĩa là không bị chết vì thiếu đường; cần đo đường nhiều lần/ngày trước-sau ăn-tập-ngủ; nhịp tim <60 quan trọng hơn đường huyết",
+    "luu_y": "Phòng ngừa: đo AH theo dõi nhịp tim; khi nhịp <60 uống đường ngay; kiểm tra đường trước tắm biển hoặc tắm lạnh. Cấp cứu: 10 thìa đường + lăn người thông máu não; hô hấp nhân tạo + đường cho suy tim"
+  },
+  {
+    "ma_benh": "PT2-103",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "Ham tập nhiều không uống đủ đường làm tụt áp huyết gây nhiều bệnh",
+    "trieu_chung": "33 tuổi nặng 45kg; rụng tóc từ 15 tuổi; mỏi cột sống cổ đến đốt 7; khó thở theo chu kỳ; táo bón 3-4 ngày/lần; huyết trắng đục ngứa vùng kín; tay chân lạnh khi lạnh; mất trí nhớ 2 năm gần đây",
+    "chi_so": "Trước tập: TT 95/62/75; TP 98/61/72; đường 140mg/dl. Sau tập 400 lần Kéo Ép Gối: TT 85/51/71; TP 94/56/72; đường 129mg/dl. Mất: tâm thu 4-9mmHg; tâm trương 5-6mmHg; đường 11mg/dl",
+    "nguyen_nhan": "Ăn ít không đủ chất bổ máu; không uống đủ đường trước tập; tập nhiều làm cơ thể mất khí oxy mất máu mất đường; tế bào bị bỏ đói mỗi ngày nên gầy sụt 10kg",
+    "phan_biet": "Tập khi đường >200mg/dl thì AH tăng sau tập là tốt; tập khi đường thấp thì AH giảm sau tập là nguy hiểm; thuốc không thay thế được thức ăn bổ máu",
+    "luu_y": "Uống đường cho lên >200mg/dl TRƯỚC khi tập; ăn 3 tô phở/ngày; Whey Protein Isolate + đường cát vàng; tập bài Lăn Người 5-10 phút sau ăn; đo AH 2 tay trước-sau ăn để chọn thức ăn đúng"
+  },
+  {
+    "ma_benh": "PT2-104",
+    "nhom_benh": "Phương pháp YHBS",
+    "ten_benh": "Kiêng đường ăn sai tập nhiều làm bệnh càng nặng",
+    "trieu_chung": "Sợ đường cao; kiêng ăn ngọt; AH thấp như trẻ em; sau ăn AH không tăng mà giảm; tập thể dục làm đường tụt thêm; dễ mắc nhiều bệnh nan y",
+    "chi_so": "Trước ăn: TT 88/62/63; TP 96/67/65; đường 121mg/dl. Sau ăn: TT 89/90/63; TP 89/63/65; đường 106mg/dl. Sau tập 350 lần: TT 90/59/62; TP 93/63/67; đường 99mg/dl. Tâm thu TP giảm 96 xuống 93; máu gan giảm 67 xuống 63; đường giảm 121 xuống 99mg/dl",
+    "nguyen_nhan": "Áp dụng tiêu chuẩn tây y hạ đường <99mg/dl; kiêng đường ăn gạo lứt muối mè hoặc keto rau củ quả; tập thể dục để hạ đường thay vì bổ đường; tế bào bị tịch thu đường dẫn đến ung thư",
+    "phan_biet": "Tiêu chuẩn tây y 66-99mg/dl làm ăn cắp đường tế bào; tiêu chuẩn đúng WHO 1979: khi đói 140mg/dl khi no 200mg/dl; ai dưới 200mg/dl theo GS Phạm Hiếu Liêm không bị tiểu đường sống khỏe sống thọ",
+    "luu_y": "Thay vì tập để hạ đường: uống đường cho tăng 200mg/dl rồi tập; ăn đủ 3 bữa cơm không kiêng; ghi nhận thức ăn nào làm tăng AH thì ăn tiếp; thức ăn nào làm hạ AH thì bỏ"
+  },
+  {
+    "ma_benh": "PT2-110",
+    "nhom_benh": "An toàn dùng thuốc",
+    "ten_benh": "Suy thận do insulin - cơ chế và cách phòng ngừa",
+    "trieu_chung": "Creatinin nước tiểu tăng cao; chân tay sưng phù; tiểu ít; cơ thể sụt cân; đường huyết cao dù không ăn; chân lạnh; hoại tử da",
+    "chi_so": "Chân phù: tâm trương chân >100; chân lạnh súng bắn low; tâm thu chân >180; nhịp mạch chân 45-55; creatinin nước tiểu ngày càng cao",
+    "nguyen_nhan": "Insulin rút đường từ cơ bắp; cơ teo; creatine biến thành creatinin; thận lạnh nước tiểu đông đặc không thoát; ngày xưa ít ai lọc thận vì không tiêm insulin",
+    "phan_biet": "Thừa đường thật: béo phì + đường cao; thừa đường giả do insulin: gầy sụt cân + đường cao = cơ thể bị rút đường",
+    "luu_y": "Dừng insulin; uống nước gừng nóng + đường; tập bài Cúi Lạy Phật làm ấm thận tăng tiểu; dùng tấm sưởi quấn bụng; theo dõi lượng nước tiểu ra so với nước uống vào"
+  },
+  {
+    "ma_benh": "PT2-113",
+    "nhom_benh": "Thần kinh",
+    "ten_benh": "Tê liệt chân run tay Parkinson do thiếu đường",
+    "trieu_chung": "62 tuổi ngồi xe lăn; không đo được AH ở chân; tay bị giật Parkinson; dùng thuốc hạ tiểu đường; sau 1 tuần bỏ thuốc + uống đường: đi được bằng khung xe",
+    "chi_so": "AH chân không đo được (chân quá yếu); đường huyết thấp do thuốc hạ đường; sau điều trị: tay hết run chân có sức nắm khung xe",
+    "nguyen_nhan": "Thuốc hạ tiểu đường lấy đi đường nuôi tế bào thần kinh; máy đo đường không phân biệt đường đơn C6H12O6 (MW=180) và đường đa sucrose C12H22O11 (MW=342); tây y chữa sai gần 1 thế kỷ",
+    "phan_biet": "Đường đơn glucose (C6H12O6 MW=180) khác đường đa sucrose (C12H22O11 MW=342); cùng máy đo nhưng kết quả mmol/l khác nhau 2 lần; chẩn đoán tiểu đường sai dẫn đến tê liệt oan",
+    "luu_y": "Bỏ thuốc hạ đường ngay; uống đường cát vàng; Whey Protein; khung xe tập đi miễn phí 3 tháng; 1 tuần có thể đi được"
+  },
+  {
+    "ma_benh": "PT2-114",
+    "nhom_benh": "Da liễu",
+    "ten_benh": "Xơ cứng bì toàn thể (Sclerodermie)",
+    "trieu_chung": "55 tuổi; da cứng xơ; chân lạnh 34.4 độ C; creatinin cao 121.33; acid uric cao 402.13; cholesterol cao 5.43; triglycerid 4.45; đang dùng Medrol 4mg",
+    "chi_so": "AH sau uống đường gừng: TT 129/77/79; TP 139/86/79; Chân trái 166/112/83; Chân phải 165/100/83; đường 146mg/dl; nhiệt độ chân 34.4 độ C; pH 6",
+    "nguyen_nhan": "Đường huyết thấp 4.63mmol/l do tây y hạ tiêu chuẩn; thiếu nhiệt lượng làm máu mỡ đặc; cơ gân co rút; mô xơ cứng; thừa creatinin do cơ bắp teo; acid uric do men gan tăng",
+    "phan_biet": "Xơ cứng bì do thiếu đường (nhịp tim thấp lạnh người) không phải bệnh tự miễn; Medrol chữa ngọn có nhiều tác dụng phụ nguy hiểm; creatinin cao là hậu quả không phải nguyên nhân",
+    "luu_y": "Không dùng Medrol; uống đường cát vàng + gừng cho đường >200mg/dl; tập bài Thụt Dầu thông khí xuống chân; tập sau khi đường >200mg/dl; theo dõi nhiệt độ chân"
+  },
+  {
+    "ma_benh": "PT2-115",
+    "nhom_benh": "Tiêu hóa",
+    "ten_benh": "Trào ngược dạ dày dẫn đến ung thư - suy dinh dưỡng nặng",
+    "trieu_chung": "34 tuổi cao 1m41 nặng 28kg; trào ngược dạ dày-thực quản-họng; viêm teo hang vị; sa giãn dạ dày; đầy bụng ợ chua; đau thượng vị; chóng mặt; tiểu buốt rát; sụt cân",
+    "chi_so": "Trước ăn sáng: TT 86/41/62; TP 85/44/61; đường 4.7mmol/l; Sau ăn: TT 80/42/69; TP 76/37/75; đường 8.8mmol/l; tâm trương TP giảm 44 xuống 37 sau ăn = mất máu; AH ung thư giai đoạn nặng (TP tâm thu 70)",
+    "nguyen_nhan": "Thiếu đường chuyển hóa thức ăn; bao tử lạnh hàn không co bóp; bã thức ăn chặn hạ môn vị; thức ăn lên men tăng acid; không tạo được máu nuôi tế bào",
+    "phan_biet": "Trào ngược do thiếu đường (bao tử lạnh thiếu nhiệt) khác trào ngược do thừa acid thật sự; sa dạ dày là hậu quả chứ không phải nguyên nhân",
+    "luu_y": "Nước gừng nóng + 10 thìa đường trước ăn; Whey Protein Isolate 2 scoop x 3 lần/ngày + đường cát vàng; nằm Lăn Người 5 phút sau ăn; không tập mạnh; không dùng đường cát trắng"
+  },
+  {
+    "ma_benh": "PT2-116",
+    "nhom_benh": "Thần kinh",
+    "ten_benh": "Trầm cảm do thiếu đường năng lượng tế bào",
+    "trieu_chung": "Sinh viên tốt nghiệp ĐH; học online ít ra ngoài; nhớ nhớ quên quên; không hoàn thành luận văn; buồn chán tiêu cực; AH thấp 95/54 ban đầu",
+    "chi_so": "Trước ăn: TP 104/67/82; TT 97/61/84; Chân phải 143/89/81; Chân trái 134/93/81; đường 4.9mmol/l; Sau ăn 1.5h: TP 114/65/86; TT 110/68/94; đường 6.9mmol/l (thiếu so với chuẩn 11mmol/l)",
+    "nguyen_nhan": "Tiêu chuẩn đường huyết tây y hạ từ 200mg/dl xuống 70-115mg/dl; cắt giảm năng lượng ATP; tế bào thiếu đường bị lão hóa; tinh thần tiêu cực chán nản",
+    "phan_biet": "Trầm cảm do thiếu đường (bổ đường khỏi 1-2 ngày) khác trầm cảm tâm lý; đường thấp = lương thấp không muốn làm việc; không cần thuốc tây",
+    "luu_y": "Uống 5 thìa đường cát vàng rồi nhảy dây 20-30 cái; lặp lại đến 1000 cái nhảy dây; uống đến 1kg đường nhưng đường huyết vẫn <200mg/dl; chữa khỏi trong 1-2 ngày; uống thuốc đông y bổ khí huyết + nước mía"
+  },
+  {
+    "ma_benh": "PT2-128",
+    "nhom_benh": "Tiểu đường",
+    "ten_benh": "Đường cao hay thấp gây ra bệnh gì - cơ chế chuyển hóa đường đạm mỡ",
+    "trieu_chung": "Cao mỡ máu cholesterol và triglycerid; thiếu máu gầy ốm; chuyển hóa nghịch gây trào ngược dạ dày, bướu cổ, loét bao tử, men gan cao, thừa acid; đột quỵ, tai biến",
+    "chi_so": "Chuyển hóa thuận: trước ăn TT tay trái thấp; sau ăn TT tay trái cao hơn 10mmHg; tay trái sau ăn cao hơn tay phải 10mmHg. Chuyển hóa nghịch: trước ăn TT đã cao 140-150; sau ăn AH thấp hơn. pH nước bọt <6 = nguy cơ ung thư",
+    "nguyen_nhan": "Ăn nhiều protein-lipid thiếu đường dẫn đến thừa cholesterol; ăn ít đạm-mỡ chỉ rau củ quả dẫn đến thiếu máu gầy; thiếu đường bao tử lạnh thức ăn không tiêu chuyển hóa nghịch gây trào ngược",
+    "phan_biet": "Đường + đạm + chất béo đủ 3 mới thành máu; thiếu bất kỳ 1 thứ đều sinh bệnh; chuyển hóa thuận/nghịch phân biệt qua AH 2 tay trước-sau ăn; đường giả (nhịp thấp lạnh người) khác đường thật (nhịp cao nóng người)",
+    "luu_y": "Kiềm hóa bao tử: uống 1 thìa baking soda + 5 thìa đường sau ăn; bôi baking soda + đường ngoài da chữa loét; xúc trống bao tử khi chuyển hóa nghịch; theo dõi pH nước bọt đạt 6.5-7.0"
+  },
+  {
+    "ma_benh": "PT2-129",
+    "nhom_benh": "Tim mạch",
+    "ten_benh": "Mổ tim thông liên nhĩ oan do thiếu đường máu đặc - không cải thiện 18 năm",
+    "trieu_chung": "36 tuổi; mổ tim thông liên nhĩ 18 năm trước; AH luôn thấp; hay mệt; nhịp tim luôn cao 91-97. Đã uống đường 1 tháng và nước mía gừng 1 tuần",
+    "chi_so": "Lúc đói: TT 102/72/91; TP 105/67/84; đường 5.5mmol/l. Sau ăn trưa: TT 100/68/97; TP 101/63/94; đường 6.3mmol/l. AH sau ăn thấp hơn trước ăn = chuyển hóa nghịch. Áp huyết thật tính lại: 78/51/70",
+    "nguyen_nhan": "Thiếu đường làm máu đặc xơ vữa động mạch; tim không đủ máu tuần hoàn dẫn đến mổ thông tim; 18 năm sau vẫn thiếu đường nên tim không cải thiện; nhịp tim cao 91-97 là dấu hiệu thiếu máu trầm trọng",
+    "phan_biet": "Nhịp tim cao = thiếu máu (tim bơm nhanh để bù thiếu); mổ tim là chữa ngọn; AH tay phải sau ăn tâm trương giảm = mất máu từ gan; pH nước bọt cần kiểm tra nguy cơ ung thư",
+    "luu_y": "Uống rất nhiều đường để trả nợ và phục hồi; ăn phở đủ 4 nhóm thực phẩm; đo AH trước-sau ăn chọn thức ăn tăng AH; kiểm tra pH nước bọt bằng giấy quỳ để loại trừ ung thư"
+  },
+  {
+    "ma_benh": "PT2-131",
+    "nhom_benh": "Da liễu",
+    "ten_benh": "Giời leo (zona) và vẩy nến - chữa theo phong tùng hỏa hóa",
+    "trieu_chung": "Zona: đau nóng rát ngứa ran; phát ban đỏ; bọng nước vỡ đóng vảy; sốt đau đầu mệt mỏi. Vẩy nến: mảng da đỏ nổi viêm; vảy trắng bạc hoặc xám; da khô nứt chảy máu; ngứa nóng rát xung quanh mảng",
+    "chi_so": "pH nước bọt acid <6 = men gan cao vi khuẩn virus còn sống; pH kiềm 6.5-7.5 = môi trường diệt vi khuẩn; nhiệt độ vùng da >36 độ C = máu lưu thông tốt",
+    "nguyen_nhan": "Gan tàng huyết bị nhiễm độc vi khuẩn virus; can phong nội phong từ gan hoặc ngoại phong qua da; hệ miễn dịch suy yếu do thiếu đường; máu acid pH thấp tạo môi trường virus sinh sôi",
+    "phan_biet": "Tây y: zona do virus varicella-zoster; vẩy nến do tự miễn. YHBS: cả 2 do can phong + máu acid + suy miễn dịch; không cần steroid; phong tùng hỏa hóa dùng nhiệt diệt virus; bệnh ngoài da đều do máu trong gan có độc",
+    "luu_y": "1-Uống 1 thìa baking soda + 5 thìa đường kiềm hóa pH máu. 2-Pha baking soda + đường sệt bôi lên da từ ngoài vào trong mụn zona hoặc vẩy nến. 3-Dùng máy sấy tóc hoặc nhang hơ nóng lên mụn diệt virus. Kết quả: trẻ 11 tuổi bình phục trong vài ngày"
+  },
+  {
+    "ma_benh": "PT2-134",
+    "nhom_benh": "Ung thư",
+    "ten_benh": "Ung thư tụy tạng nguyên nhân và cách chữa đơn giản theo KCYĐ",
+    "trieu_chung": "Vàng da vàng mắt; ngứa da lòng bàn tay chân; mất cảm giác thèm ăn; đau bụng thượng vị; túi mật phình to; phân lỏng màu lợt nổi có mùi; phân hắc ín; giảm cân đột ngột; chán ăn mệt mỏi gầy sụt kiệt",
+    "chi_so": "Đường huyết thấp 60-90mg/dl ở người dùng thuốc tiểu đường; nhịp tim thấp <70; tay chân lạnh <35 độ C; AH thấp dưới chuẩn tuổi; uống 68 thìa đường trong 7 lần mới lên 172mg/dl chứng tỏ tế bào đói trầm trọng",
+    "nguyen_nhan": "Thuốc insulin rút đường glycogen từ cơ thể; tế bào thiếu glucose-protein-lipid-oxy; không tổng hợp được glycoprotein và glycolipid; màng tế bào phá vỡ chuyển đổi gene dẫn đến ung thư; tuyến tụy ngưng hoạt động vì không có đường từ thức ăn",
+    "phan_biet": "Ung thư tụy do thiếu đường (gầy ốm lạnh người nhịp thấp) khác tiểu đường thật (béo phì nóng người nhịp cao); không cần hóa trị xạ trị; nguyên nhân gốc là tiêu chuẩn đường huyết >126mg/dl bị insulin tịch thu",
+    "luu_y": "1-Uống đường nhiều lần liên tiếp cho đến khi đường đạt 200mg/dl (đường trả nợ). 2-Sau khi đủ đường tập bài Lăn Người 15 phút/ngày để tế bào nhận đường. 3-Phát hiện sớm qua AH 2 tay trước-sau ăn và nhiệt kế lòng bàn tay"
+  }
+]
